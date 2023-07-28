@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es" >
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/Estilos/EstiloEditarPerfiles.css">
+    <link rel="stylesheet" href="/Estilos/EstilosEncabezadoUsuarioFinal.css">
+    <link rel="stylesheet" href="/Estilos/Footer.css">
+    <link rel="stylesheet" href="/Estilos/Validaciones.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300&family=Copse&family=Karla:wght@300&display=swap" rel="stylesheet">
+    <title>Editar perfil usuario final</title>
+</head>
+<!-- Encabezado de la página -->
+<header>
+    <!-- Sección con el logo y nombre del producto -->
+    <img src="/imagenes/Growth_logo.png">
+    <div class="nombre_equipo">
+        <h3><a href="/Usuario Final/HomeUsuarioFinal.html">Growth</a></h3>
+        <p><a href="/Usuario Final/HomeUsuarioFinal.html">Cultivando el crecimiento y los sueños</a></p>
+    </div> 
+    <!-- Sección con enlaces -->
+    <div class="Enlaces">
+        <div class="opciones_menu">
+            <img src="/imagenes/Notificaciones.png">
+            <a href="/Usuario Final/NotificacionesUsuarios.html" class="opciones">Notificaciones</a>
+        </div>
+        <div class="opciones_menu">
+            <img src="/imagenes/Reportes.png">
+            <a href="/Usuario Final/reportesUsuarioFinal.html" class="opciones">Mis reportes</a>
+        </div>
+        <div class="opciones_menu">
+            <img src="/imagenes/Mi_perfil.png">
+            <a href="/Usuario Final/PerfilUsuarioFinal.html" class="opciones">Mi perfil</a>
+        </div>
+        <div class="opciones_menu">
+            <img src="/imagenes/cerrar_sesion.png">
+            <a href="/HomeGrowth.html" class="opciones">Cerrar Sesión</a>
+        </div>
+    </div>
+</header>
+<body>
+<!--Foto de perfil-->
+    <div class="foto_perfil">
+        <div id="marco_foto">
+            <div class="cuadro_fotografia">
+                <div id="fondo_marco">
+                    <img src="/imagenes/usuario.png">
+                </div>
+                <input type="file" name="foto" accept=".jpg, .png">
+            </div>
+        </div>
+    </div>
+<!--Cuadro con el perfil del usuario-->
+    <div class="centrar_cuadro">
+        <div class="cuadro_borde">
+            <div class="cuadro_fondo">
+                <form action="" id="formulario">
+                    <div class="perfil_usuario">
+                        <div class="modificacion_titulo">
+                            <h1><input class="nombre" name="nombre" type="text" value="Nombre usuario">
+                            <span id="span_titulo"></span></h1>
+                        </div>
+                        <h2>Información perfil</h2>
+                        <select class="estado" name="estado">
+                            <option selected>Activo</option>
+                            <option>Inactivo</option>
+                        </select>
+                        <div class="modificacion">
+                            <p><strong>Cédula:</strong>  
+                                <div class="mensaje_error">
+                                    <input type="text" name="cedula" value="0-0000-0000">
+                                    <span></span>
+                                </div>
+                            </p>
+                        </div>
+                        <div class="modificacion">
+                            <p><strong>Número de teléfono:</strong> 
+                                <div class="mensaje_error">
+                                    <input type="tel" name="telefono" value="88880000">
+                                    <span></span>
+                                </div>
+                            </p>
+                        </div>
+                        <div class="modificacion">
+                            <p><strong>Género:</strong> <select name="gerero" id="genero"><option>Femenino</option><option>Masculino</option><option>Sin especificar</option></select></p>
+                        </div>
+                        <div class="modificacion">
+                            <p><strong>Correo electrónico:</strong> ejemplo@codecraft.com</p>
+                        </div>
+                        <div class="modificacion">
+                            <p><strong>Contraseña:</strong> 
+                                <div class="mensaje_error">
+                                    <input type="password" name="contrasena" value="casm123@$k">
+                                    <span></span>
+                                </div>
+                            </p>
+                        </div>
+                        <h3>Entradas de estudio</h3>
+                        <div class="estudios">
+                            <textarea name="datos_estudios"cols="0" rows="15">
+
+Estudios #1: 
+Título obtenido: Bachillerato
+Institución: UCR
+Descripción:  Obtuve un título de bachillerato en Ciencias de la computación en la Universidad de Costa Rica. Fui un estudiante de excelencia y mi promedio habitual era de 9. 
+
+
+Estudios  #2:
+Título obtenido: Técnico
+Institución: Cenfotec
+Descripción:  Obtuve un título de bachillerato en Desarrollo de Software en la Universidad de Cenfotec. Fui un estudiante de excelencia y mi promedio habitual era de 10. 
+                            </textarea><span class="validacion_textarea"></span>
+                        </div>
+                        <h3>Experiencia laboral</h3>
+                        <div class="experiencia">
+                            <textarea name="datos_experiencia"cols="50" rows="15">
+Experiencia #  1:
+Puesto: Soporte técnico
+Años: 1
+Descripción del puesto: Atender y resolver consultas, problemas o incidencias técnicas de los usuarios. Configurar y mantener sistemas informáticos y redes. Instalar, actualizar y mantener software y aplicaciones.
+                            </textarea><span class="validacion_textarea"></span>
+                        </div>
+                        <h3>Currículum</h3>
+                        <div class="datos_curriculum">
+                            <div class="curriculum">
+                                <img src="/imagenes/pdf_logo.png" alt="Icono pdf">
+                                <p><input id="archivo_curriculum" type="file" name="curriculum" accept=".pdf, .word"><span class="validacion_curriculum"></span></p>
+                            </div>
+                        </div>
+                        <div class="btn_final">
+                            <div class="btn">
+                                <button class="guardar_cambios">Guardar cambios</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="/JavaScript/validacionesEditarUsuarioFinal.js"></script>
+</body>
+<!-- Pie de página -->
+<footer>
+    <!-- Apartado de contacto -->
+    <div id="contactanos">
+      <ul>
+        <h4>CONTÁCTANOS</h4>
+        <li>Teléfono: +506 8824 2887</li>
+        <li>WhatsApp: +506 6052 5912</li>
+        <li>Correo: serviciosinfo@growth.ac.cr</li>
+        <li>Dirección: Calle 49, a un costado del Mall San</li>
+        <li>Pedro, Montes de Oca, San José, Costa Rica</li>
+      </ul>
+    </div>
+    <!-- Apartado de información acerca de la empresa y el producto -->
+    <div id="acercade">
+      <h4>ACERCA DE</h4>
+      <div class="enlaces">
+        <img src="/imagenes/nuestro producto.png" alt="nuestro producto" />
+        <a href="/LandingPageProducto.html">Nuestro Producto</a>
+      </div>
+      <div class="enlaces">
+        <img src="/imagenes/sobre nosotros.png" alt="sobre nosotros" />
+        <a href="/LandingPageCodeCraft.html">Nuestro equipo</a>
+      </div>
+    </div>
+    <!-- Apartado de redes -->
+    <div id="redes">
+      <h4>REDES</h4>
+      <img src="/imagenes/facebook_logo.png" alt="facebook_logo" />
+      <img src="/imagenes/twitter_logo.png" alt="twitter_logo" />
+      <img src="/imagenes/instagram_logo.png" alt="instagram_logo" />
+    </div>
+    <!-- Apartado con copyright -->
+    <div id="copyright">
+        <p>&copy Copyright 2023 Growth</p>
+    </div>
+</footer> 
+</html> 

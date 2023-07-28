@@ -1,0 +1,827 @@
+body {
+  margin: 0;
+}
+
+#flex {
+  display: flex;
+  justify-content: center;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+#botones a, #dropdownContent a{
+  font-family: 'Karla', sans-serif ;
+}
+
+#textoAyuda, #valores h3, #valores h2, #misionVisionFlex h2, #nuestroEquipoFlex h1, #nuestroEquipoFlex h3, #contactanos h2, #footerDerecha h3 {
+  font-family: 'Copse', serif;
+}
+
+#textoInfo, #valores p, #misionVisionFlex p, #nuestroEquipo p, #formularioContacto input, #formularioContacto textarea, #footer p, #footer a{
+  font-family: "Commissioner", sans-serif;
+}
+
+#cajaMorada {
+  margin-top: 10px;
+  width: 90%;
+  min-height: 600px;
+  background: #3b1c5b;
+  border-radius: 15px;
+}
+
+#logo {
+  width: 150px;
+  margin-top: 20px;
+}
+
+#header {
+  display: inline-block;
+  width: 100%;
+}
+
+#botones {
+  float: right;
+}
+
+#botones a {
+  color: #ab7abe;
+  text-decoration: none;
+  vertical-align: top;
+  float: right;
+  padding: 25px;
+  scroll-behavior: auto;
+}
+
+#boton {
+  background: #ab7abe;
+  padding: 20px;
+  border-radius: 20px;
+  float: right;
+  margin-top: 25px;
+  margin-right: 30px;
+  margin-left: 50px;
+  
+}
+
+#botones :first-child{
+  color: #ffffff;
+  font-size: x-large;
+}
+
+#botonResponsive {
+  display: none;
+}
+
+/*Responsive dropdown menu*/
+
+@media only screen and (max-width: 1100px) {
+  #boton {
+    display: none;
+  }
+
+  #botones a {
+    display: none;
+  }
+
+  #botonResponsive {
+    display: block;
+    padding: 20px;
+    border-radius: 20px;
+    float: right;
+    margin-top: 5px;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+
+  #dropdown button {
+    position: relative;
+    border: none;
+    background: #ab7abe;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 20px;
+  }
+
+  #dropdown img {
+    width: 45px;
+  }
+
+  #dropdownContent a {
+    font-size: x-large;
+    text-decoration: none;
+    display: block;
+    color: #ffffff;
+  }
+
+  #dropdownContent {
+    position: absolute;
+    background: #3b1c5b;
+    display: none;
+  }
+
+  #botonResponsive:hover #dropdownContent {
+    display: block;
+  }
+
+  #dropdownContent a:hover {
+    background-color: #ab7abe;
+    border-radius: 5px;
+  }
+}
+/* Fin Responsive dropdown menu*/
+
+#flexEncabezado {
+  display: flex;
+  justify-content: center;
+}
+
+#textoEncabezado {
+  margin-top: 50px;
+  margin-right: 4%;
+}
+
+#textoAyuda {
+  color: #ffffff;
+  font-size: xx-large;
+}
+
+#textoInfo {
+  margin-top: 40px;
+  width: 350px;
+  color: #ab7abe;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+#encabezado {
+  width: 500px;
+  height: 330px;
+  margin-left: 4%;
+  margin-top: 30px;
+}
+
+/*Responsive texto encabezado tablet*/
+
+@media only screen and (max-width: 1100px) {
+  #textoEncabezado {
+    margin-top: 70px;
+  }
+
+  #textoAyuda {
+    color: #ffffff;
+    font-size: xx-large;
+  }
+
+  #textoInfo {
+    margin-top: 40px;
+    width: 250px;
+    color: #ab7abe;
+  }
+
+  #encabezado {
+    display: block;
+    width: 300px;
+    height: 230px;
+    margin-left: 4%;
+    margin-top: 120px;
+  }
+}
+
+/*Fin Responsive texto encabezado tablet*/
+
+/*Responsive texto encabezado Phone*/
+
+@media only screen and (max-width: 760px) {
+  #flexEncabezado{
+    display: block;
+    padding-left: 15%;
+  }
+
+  #textoEncabezado {
+    display: inline-block;
+    font-size: x-large;
+    margin-top: 30px;
+    margin-right: 4%;
+  }
+
+  #textoAyuda {
+    color: #ffffff;
+    font-size: xx-large;
+  }
+
+  #textoInfo {
+    font-size: small;
+    width: 250px;
+    color: #ab7abe;
+  }
+
+  #encabezado {
+    display: block;
+    width: 290px;
+    height: 190px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    margin-left: -10px;
+  }
+}
+
+/*Fin Responsive texto encabezado Phone*/
+
+#valores {
+  display: flex;
+  justify-content: space-evenly;
+  float: right;
+  margin-top: 30px;
+  min-height: 350px;
+  width: 85%;
+  background: #dfddff;
+  border-top-left-radius: 45px;
+  border-bottom-left-radius: 45px;
+}
+
+#valoresResponsiveArriba, #valoresResponsiveAbajo{
+  display: none;
+}
+
+#valores h3 {
+  color: #ab7abe;
+}
+
+#valores h2 {
+  color: #ab7abe;
+  margin-top: 100px;
+}
+
+#linea {
+  margin-top: 150px;
+  border: 1px solid #000000;
+  height: 100px;
+}
+
+#valoresImagenes {
+  margin-top: 100px;
+  width: 60px;
+  height: 60px;
+}
+
+#valores p {
+  font-size: small;
+  line-height: 1.5;
+}
+
+#nuestrosValores,
+#calidad,
+#innovacion,
+#orientacion {
+  width: 20%;
+}
+
+/* Valores Responsive*/
+
+@media only screen and (max-width: 1100px) {
+  #valores {
+    display: none;
+  }
+
+  #valoresResponsiveArriba {
+    display: flex;
+    justify-content: space-evenly;
+    float: right;
+    margin-top: 30px;
+    height: 300px;
+    width: 95%;
+    background: #dfddff;
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;
+  }
+
+  #valoresResponsiveAbajo {
+    display: flex;
+    justify-content: space-evenly;
+    float: left;
+    margin-top: 30px;
+    height: 300px;
+    width: 95%;
+    background: #dfddff;
+    border-top-right-radius: 45px;
+    border-bottom-right-radius: 45px;
+  }
+
+  #valoresResponsiveArriba h3,
+  #valoresResponsiveAbajo h3 {
+    font-family: Copse;
+    color: #ab7abe;
+  }
+
+  #valoresResponsiveArriba h2 {
+    font-family: Copse;
+    color: #ab7abe;
+    margin-top: 100px;
+  }
+
+  #valoresResponsiveArriba p,
+  #valoresResponsiveAbajo p {
+    font-family: Commissioner;
+  }
+
+  #lineaResponsive {
+    margin-top: 100px;
+    border: 1px solid #000000;
+    height: 100px;
+  }
+
+  #valoresImagenesResponsive {
+    margin-top: 65px;
+    width: 60px;
+    height: 60px;
+  }
+
+  #valoresResponsiveArriba p,
+  #valoresResponsiveAbajo p {
+    font-size: small;
+  }
+
+  #nuestrosValoresResponsive,
+  #calidadResponsive,
+  #innovacionResponsive,
+  #orientacionResponsive {
+    width: 40%;
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+  #nuestrosValoresResponsive,
+  #calidadResponsive,
+  #innovacionResponsive,
+  #orientacionResponsive {
+    margin-top: -30px;
+  }
+}
+
+/*Fin Valores Responsive*/
+
+#misionVisionFlex {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#misionVision {
+  margin-top: 100px;
+}
+
+#misionVision p{
+  line-height: 1.5;
+  text-align: justify;
+}
+ 
+@media only screen and (min-width: 1100px) {
+  #misionVision {
+    width: 55%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  #misionVision {
+    width: 85%;
+  }
+}
+
+#misionImagen {
+  height: 130px;
+  width: 230px;
+  margin-left: 20px;
+  margin-top: -30px;
+  float: right;
+}
+
+#visionTexto {
+  margin-top: 100px;
+  text-align: right;
+  margin-bottom: 70px;
+}
+
+#visionImagen {
+  margin-right: 20px;
+  margin-top: -30px;
+  height: 130px;
+  width: 230px;
+  float: left;
+}
+
+/*-----------Nuestro Equipo------------*/
+
+#nuestroEquipoFlex {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+#nuestroEquipo h1 {
+  margin-top: 50px;
+}
+
+#nuestroEquipo {
+  text-align: center;
+  width: 90%;
+  background: #d1ceff;
+  border-radius: 30px;
+  color: #3b1c5b;
+}
+
+@media only screen and (min-width: 1460px) {
+  #integrantesArriba {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 1460px) {
+  #integrante1 {
+    padding-left: 10%;
+  }
+
+  #integrante2 {
+    padding-right: 10%;
+  }
+
+  #integrante3 {
+    padding-left: 10%;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  #integrante1 {
+    padding-left: 0%;
+  }
+
+  #integrante2 {
+    padding-right: 0%;
+  }
+
+  #integrante3 {
+    padding-left: 0%;
+  }
+}
+
+#integrante1 {
+  margin: 20px;
+  float: left;
+}
+
+#integrante2 {
+  margin: 20px;
+  float: right;
+}
+
+#circulo1 { 
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  color: #000000;
+  background: #ffffff;
+  border-radius: 50%;
+  position: relative;
+}
+
+#equipo1 {
+  width: 510px;
+  height: 210x;
+  max-width: 100%;
+  text-align: left;
+  border: 3px solid #e399cc;
+  border-radius: 30px;
+  background: #ffffff;
+  float: left;
+  margin-top: -50px;
+  margin-left: 50px;
+  padding-left: 50px;
+}
+
+#circulo2 {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  background: #ffffff;
+  border-radius: 50%;
+  position: relative;
+  margin-left: 500px;
+}
+
+#equipo2 {
+  width: 510px;
+  height: 210x;
+  text-align: left;
+  border: 3px solid #e399cc;
+  border-radius: 30px;
+  background: #ffffff;
+  float: right;
+  margin-top: -50px;
+  margin-right: 50px;
+  padding-left: 50px;
+}
+
+@media only screen and (max-width: 730px) {
+  #equipo2 {
+    width: 310px;
+  }
+
+  #equipo1 {
+    width: 310px;
+  }
+}
+
+@media only screen and (max-width: 505px) {
+  #equipo2 {
+    width: 210px;
+  }
+
+  #equipo2 p {
+    margin-left: -20px;
+  }
+
+  #equipo2 h3 {
+    margin-left: -40px;
+  }
+
+  #equipo1 {
+    width: 210px;
+  }
+}
+
+#integrante3 {
+  margin: 20px;
+  float: left;
+}
+
+#circulo3 {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  background: #ffffff;
+  border-radius: 50%;
+  position: relative;
+}
+
+@media only screen and (min-width: 730px) {
+  #equipo3 {
+    width: 510px;
+    height: 210x;
+    max-width: 100%;
+    text-align: left;
+    border: 3px solid #e399cc;
+    border-radius: 30px;
+    background: #ffffff;
+    float: left;
+    margin-top: -50px;
+    margin-left: 50px;
+    padding-left: 50px;
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (min-width: 1460px) {
+  #integranteFlex {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  #equipo3 {
+    width: 310px;
+    height: 210x;
+    max-width: 100%;
+    text-align: left;
+    border: 3px solid #e399cc;
+    border-radius: 30px;
+    background: #ffffff;
+    float: left;
+    margin-top: -50px;
+    margin-left: 50px;
+    padding-left: 50px;
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 505px) {
+  #equipo3 {
+    width: 210px;
+    height: 210x;
+    max-width: 100%;
+    text-align: left;
+    border: 3px solid #e399cc;
+    border-radius: 30px;
+    background: #ffffff;
+    float: left;
+    margin-top: -50px;
+    margin-left: 50px;
+    padding-left: 50px;
+    margin-bottom: 40px;
+  }
+}
+
+.avatar{
+  width: 50px;
+  height: 50px;
+  margin-top: 25px;
+}
+
+/*-----------Fin Nuestro Equipo------------*/
+
+#contactanos {
+  margin-top: 80px;
+  width: 100%;
+  height: 400px;
+  background: #ffe4f8;
+  border: 2px solid #f0b3ad;
+  border-top-left-radius: 200px;
+  border-top-right-radius: 70%;
+  border-right: 300;
+}
+
+#formularioContacto{
+  margin-left: 100px;
+  margin-top: 120px;
+
+}
+
+#formulario{
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+}
+
+#formulario input{
+  height: 30px;
+  border: none;
+  margin-bottom: 15px;  
+}
+
+#formulario textarea{  
+  border: none;
+}
+
+#enviar{
+  margin-top: 30px;
+  margin-left: 55px;
+  background: #3b1c5b ;
+  color: #ffffff;
+  width: 130px;
+  height: 35px;
+  border-radius: 25px;
+}
+
+
+/*-----------Fin Contactanos------------*/
+
+#footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 290px;
+  background: linear-gradient(to right, #e39aca, #eeafb1);
+}
+
+#logoFooter {
+  width: 150px;
+  height: 100px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+#socialMedia {
+  margin-top: 10px;
+  margin-left: 60px;
+}
+
+#socialMedia img {
+  padding: 5px;
+}
+
+#frase {
+  margin-left: 60px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+#footerDerecha {
+  display: flex;
+  margin-top: 15px;
+}
+
+#contacto,
+#sobre,
+#compania {
+  display: inline-block;
+}
+
+#footerDerecha a, #contacto p {
+  color: #000000;
+  text-decoration: none;
+  font-size: small;
+  margin-right: 50px;
+}
+
+#contacto h3{
+  margin-bottom: 10px;
+}
+
+#contacto img {
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  padding-top: 11px;
+  padding-right: 5px;
+}
+
+.centrar {
+  margin-bottom: 15px;
+}
+
+.contacto{
+  margin-bottom: -10px;
+  display: flex;
+}
+
+@media only screen and (max-width: 850px) {
+  #logoFooter {
+    width: 80px;
+    height: 60px;
+  }
+
+  #socialMedia img {
+    width: 30px;
+  }
+
+  #footerIzquierda {
+    margin-left: -25px;
+  }
+
+  #frase {
+    width: 200px;
+    font-size: smaller;
+    margin-left: 40px;
+  }
+
+  #socialMedia {
+    margin-left: 30px;
+  }
+
+  #footerDerecha a{
+    margin-right: 20px;
+    font-size: x-small;
+  }
+
+  #footerDerecha {
+    margin-right: 15px;
+  }
+
+  #footerDerecha h3{
+    font-size: 15px;
+  }
+
+  #contacto img{
+    width: 10px;
+    height: 10px;
+  }
+
+  #contacto p{
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  #frase {
+    width: 120px;
+    font-size: 10px;    
+  }
+
+  #contacto img {
+    width: 15px;
+  }
+
+  #footerDerecha a{
+    margin-right: 10px;
+  }
+
+  #footerDerecha h3{
+    font-size: 15px;
+  }
+
+  #contacto img{
+    width: 10px;
+    height: 10px;
+  }
+
+  #contacto p{
+    font-size: 10px;
+  }
+}

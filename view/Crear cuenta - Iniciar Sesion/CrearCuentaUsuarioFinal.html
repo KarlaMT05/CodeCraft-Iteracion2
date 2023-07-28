@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/Estilos/EstiloCrearCuentas.css">
+    <link rel="stylesheet" href="/Estilos/Footer.css">
+    <link rel="stylesheet" href="/Estilos/Validaciones.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300&family=Copse&family=Karla:wght@300&display=swap" rel="stylesheet">
+    <title>Crear cuenta usuario final</title>
+</head>
+<body>
+<!-- Encabezado de la página -->
+    <div class="encabezado">
+        <img src="/imagenes/Growth_logo.png">
+        <h1><a href="/HomeGrowth.html">Growth</a></h1>
+    </div>
+    <!--Foto de perfil-->
+    <div class="foto_perfil">
+        <div id="marco_foto">
+            <div class="cuadro_fotografia">
+                <div id="fondo_marco">
+                    <img src="/imagenes/usuario.png">
+                </div>
+                <input type="file" name="foto" accept=".jpg, .png">
+                <span class="validacion_foto"></span>
+            </div>
+        </div>
+    </div>
+<!--Cuadro con el perfil del usuario-->
+    <div class="centrar_cuadro">
+        <div class="crear_cuenta">
+            <form action="" id="formulario">
+                <div class="perfil_usuario">
+                    <div class="modificacion_titulo">
+                        <h1><input class="nombre" name="nombre" type="text" placeholder="Ingrese su nombre completo">
+                        <span id="span_titulo"></span></h1>
+                    </div>
+                    <h2>Información perfil</h2>
+                    <div class="modificacion">
+                        <p><strong>Cédula:</strong>  
+                            <div class="mensajeError">
+                                <input type="text" name="cedula" placeholder="Ingrese su cédula">
+                                <span></span>
+                            </div>
+                        </p>
+                    </div>
+                    <div class="modificacion">
+                        <p><strong>Número de teléfono:</strong> 
+                            <div class="mensajeError">
+                                <input type="tel" name="telefono" placeholder="Ingrese su teléfono">
+                                <span></span>
+                            </div>
+                        </p>
+                    </div>
+                    <div class="modificacion">
+                        <p><strong>Género:</strong> 
+                        <select name="genero" id="genero">
+                            <option selected disabled>Seleccione una opción</option>
+                            <option>Femenino</option>
+                            <option>Masculino</option>
+                            <option>Sin especificar</option>
+                        </select>
+                        <span></span>
+                        </p>
+                    </div>
+                    <div class="modificacion">
+                        <p><strong>Correo electrónico:</strong></p>
+                        <div class="mensajeError">
+                            <input type="email" name="correo"  placeholder="ejemplo@codecraft.com">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="modificacion">
+                        <p><strong>Contraseña:</strong> 
+                            <div class="mensajeError">
+                                <input type="password" name="contrasena" placeholder="**********">
+                                <span></span>
+                            </div>
+                        </p>
+                    </div>
+                    <h3>Entradas de estudio</h3>
+                    <div class="estudios">
+                        <textarea name="datos_estudios"cols="0" rows="15"></textarea>
+                        <span class="validacion_textarea"></span>
+                    </div>
+                    <h3>Experiencia laboral</h3>
+                    <div class="experiencia">
+                        <textarea name="datos_experiencia"cols="50" rows="15"></textarea>
+                        <span class="validacion_textarea"></span>
+                    </div>
+                    <h3>Currículum</h3>
+                    <div class="datos_curriculum">
+                        <div class="curriculum">
+                            <img src="/imagenes/pdf_logo.png" alt="Icono pdf">
+                            <p><input id="archivo_curriculum" type="file" name="curriculum" accept=".pdf, .word"><span class="validacion_curriculum"></span></p>
+                        </div>
+                    </div>
+                    <div class="btn_final">
+                        <div class="btn">
+                            <button class="guardar_cambios">Crear cuenta</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="/JavaScript/validacionesCrearCuentaUsuarioFinal.js"></script>
+</body>
+<!-- Pie de página -->
+<footer>
+    <!-- Apartado de contacto -->
+    <div id="contactanos">
+      <ul>
+        <h4>CONTÁCTANOS</h4>
+        <li>Teléfono: +506 8824 2887</li>
+        <li>WhatsApp: +506 6052 5912</li>
+        <li>Correo: serviciosinfo@growth.ac.cr</li>
+        <li>Dirección: Calle 49, a un costado del Mall San</li>
+        <li>Pedro, Montes de Oca, San José, Costa Rica</li>
+      </ul>
+    </div>
+    <!-- Apartado de información acerca de la empresa y el producto -->
+    <div id="acercade">
+      <h4>ACERCA DE</h4>
+      <div class="enlaces">
+        <img src="/imagenes/nuestro producto.png" alt="nuestro producto" />
+        <a href="/LandingPageProducto.html">Nuestro Producto</a>
+      </div>
+      <div class="enlaces">
+        <img src="/imagenes/sobre nosotros.png" alt="sobre nosotros" />
+        <a href="/LandingPageCodeCraft.html">Nuestro equipo</a>
+      </div>
+    </div>
+    <!-- Apartado de redes -->
+    <div id="redes">
+      <h4>REDES</h4>
+      <img src="/imagenes/facebook_logo.png" alt="facebook_logo" />
+      <img src="/imagenes/twitter_logo.png" alt="twitter_logo" />
+      <img src="/imagenes/instagram_logo.png" alt="instagram_logo" />
+    </div>
+    <!-- Apartado con copyright -->
+    <div id="copyright">
+        <p>&copy Copyright 2023 Growth</p>
+    </div>
+</footer>
+</html> 

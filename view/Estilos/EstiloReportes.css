@@ -1,0 +1,328 @@
+body {
+    background: #fffbf4;
+    height: 100%;
+}
+  
+.pagina_principal{
+    padding: 200px 146px;
+    padding-right: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.columna_1, .columna_2{
+    column-count: 1;
+}
+
+.columna_1{
+    margin-right: 140px;
+}
+
+/* Cuadros con degradados redondeados */
+
+.cuadro_borde, .cuadro_borde_invitacion{
+    background: linear-gradient(to left, #F9D423, #F83600);
+    border-radius: 40px;
+    width: 817px;
+    height: fit-content;
+    padding: 5px;
+}
+
+.cuadro_fondo, .cuadro_fondo_invitacion{
+    border-radius: 40px;
+    min-height: 182px;
+    width: 731px;
+    background: white;
+    padding: 42px;
+    font-family: "Commissioner", sans-serif;
+}
+
+.cuadro_borde_invitacion{
+    width: 541px;
+}
+
+.cuadro_fondo_invitacion{
+    width: 455px;
+}
+
+/* Invitaciones */
+
+.invitaciones{
+    width: 455px;
+    min-height: 820px;
+    background-color: #FFF2DE;
+    border-radius: 20px;
+    font-family: "Commissioner", sans-serif;
+    margin-bottom: 53px;
+    margin-right: 80px;
+}
+
+.invitaciones h1{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 800;
+    padding-top: 37px;
+    margin-bottom: 40px;
+}
+
+.invitaciones p, .invitaciones label, .invitaciones input, .invitaciones textarea{
+    display: block;
+    font-size: 16px;
+    text-align: left;
+    margin-left: 37px;
+}
+
+.invitaciones p{
+    font-weight: bold;
+    line-height: 30px;
+    margin-bottom: 35px;
+}
+
+.invitaciones input{
+    width: 335px;
+    height: 50px;
+    margin-top: 23px;
+    padding-left: 15px;
+    border: none;
+    border-radius: 40px;
+}
+
+.espacio_mensajes{
+    text-align: left;
+}
+
+.invitaciones input[type="radio"]{
+    width: 16px;
+    height: 16px;
+}
+
+.mensaje p{
+    margin-left: 10px;
+    margin-top: 17px;
+    margin-bottom: 0px;
+}
+
+.mensaje input, .mensaje p{
+    display: inline-block;
+    text-align: left;
+}
+
+.invitaciones textarea{
+    width: 335px;
+    height: 192px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 37px;
+    font-family: "Commissioner", sans-serif;
+    padding: 10px;
+}
+
+#enviar {
+    background: repeating-linear-gradient(to top, #F83600, #F9D423);
+    border: none;
+    font-size: 16px;
+    font-weight: bolder;
+    width: 158px;
+    height: 47px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 30%;
+    border-radius: 20px;
+}
+
+/* Filtros */
+
+.filtro {
+    margin-top: 150px;
+    margin-left: 20px;
+}
+  
+.filtro_individual {
+    display: flex;
+    margin-bottom: 25px;
+}
+  
+.imagen_filtro {
+    background: #ffd971;
+    width: 55px;
+    border-top-left-radius: 45%;
+    border-bottom-left-radius: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -20px;
+    z-index: 1;
+}
+
+.imagen_filtro img{
+    width: 30px;
+    height: 30px;
+}
+
+.filtro_individual input, .filtro_individual select{
+    font-family: "Commissioner", sans-serif;
+    width: 327px;
+    height: 47px;
+    padding-left: 30px;
+    border: none;
+    border-radius: 50px;
+}
+  
+.filtro button{
+    background: repeating-linear-gradient(to top, #F83600, #F9D423);
+    font-family: "Commissioner", sans-serif;
+    width: 165px;
+    height: 50px;
+    font-weight: bolder;
+    margin-left: 105px;
+    margin-top: 50px;
+    border: none;
+    border-radius: 25px;
+}
+
+/* Reporte de aplicaciones */
+
+.encabezado_reportes{
+    border-bottom: 2px solid #f87400;
+    display: flex;
+    gap: 35%;
+    margin: 0px -42px;
+}
+
+.encabezado_reportes h3{
+    font-size: 24px;
+    padding-left: 42px;
+    padding-bottom: 30px;
+}
+
+.encabezado_reportes h4{
+    font-size: 18px;
+    padding-top: 5px;
+}
+
+
+.encabezado_postulacion{
+    display: flex;
+    gap: 42%;
+    margin-left: -10px;
+}
+
+.ofertas{
+    padding: 42px 30px;
+    padding-bottom: 0px;
+}
+
+.info_candidato{
+    border-bottom: 2px solid #f87400;
+    padding: 40px 0px;
+    margin: 0px -40px;
+}
+
+.ofertas_2 {
+    display: flex;
+    justify-content: center;
+}
+
+.ofertas h1{
+    font-size: 24px;
+    display: inline-block
+}
+
+.informacion{
+    padding-right: 30px;
+}
+
+.informacion p{
+    padding-bottom: 12px;
+    text-align: justify;
+    width: 480px;
+    word-wrap: break-word;
+}
+  
+.foto_perfil img, .logo_empresa img{
+    width: 175px;
+    height: 137px;
+}
+.foto_perfil_2 img{
+    width: 145px;
+    height: 107px;
+}
+
+.inferior_reportes{
+    display: flex;
+    gap: 70%;
+    margin-left: 35px;
+}
+
+.inferior_reportes a, .inferior_reportes p{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    justify-content: right;
+    padding-top: 20px;
+}
+
+#btn_cancelar{
+    padding-left: 57px;
+    color: red;
+}
+
+/* Reportes de usuarios dentro de la empresa */
+
+#reporte_usuarios{
+    margin-bottom: 100px;
+}
+
+#usuarios_empresa{
+    padding-top: 0px;
+}
+
+#informacion_usuarios_empresa p{
+    margin-left: -30px;
+}
+
+#nombre_usuario{
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+/* Reportes de invitaciones */
+
+#invitacion{
+    margin-top: 100px;
+}
+
+#reporte_invitaciones{
+    padding-top: 0px;
+}
+
+#informacion_invitacion p{
+    margin-left: -170px;
+}
+
+#direccion_invitacion a{
+    margin-left: 70%;
+    margin-top: -20px;
+}
+
+/* Reportes de invitaciones recibidas*/
+
+.cuadro_fondo_invitacion h1{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.cuadro_fondo_invitacion a{
+    background: repeating-linear-gradient(to top, #F83600, #F9D423);
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 25px;
+    margin-left: 30%;
+}

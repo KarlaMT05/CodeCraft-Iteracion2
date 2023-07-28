@@ -1,0 +1,220 @@
+body{
+    background: #FFFBF4;
+}
+
+/* Foto de perfil */
+
+#marco_foto{
+    background: linear-gradient(to left, #F9D423, #F83600);
+    border-radius: 50%;
+    width: 217px;
+    height: 211px;
+    position: absolute;
+    top: 140px;
+    left: 200px;
+    z-index: 1;
+}
+
+#fondo_marco{
+    border-radius: 50%;
+    width: 207px;
+    height: 201px;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2px;
+}
+
+#fondo_marco img{
+    border-radius: 50%;
+    width: 207px;
+    height: 201px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.foto_perfil input{
+    width: 125px;
+    font-size: 12px;
+    top: 180px;
+    left: 150px;
+    position: relative;
+}
+
+/* Cuadros */
+
+.centrar_cuadro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 200px;
+    margin-bottom: 82px;
+}
+
+.cuadro_borde{
+    background: linear-gradient(to left, #F9D423, #F83600);
+    border-radius: 40px;
+    width: 1275px;
+    min-height: 292px;
+    padding: 5px;
+}
+
+.cuadro_fondo{
+    border-radius: 40px;
+    min-height: 282px;
+    width: 1045px;
+    background: white;
+    padding: 92px 115px;
+    font-family: "Commissioner", sans-serif;
+}
+
+/*Título y estado*/
+
+.modificacion_titulo{
+    text-align: center;
+    margin-bottom: 73px;
+}
+
+.modificacion_titulo input{
+    width: 500px;
+}
+
+.nombre{
+    font-size: 36px;
+    font-family: "Commissioner",serif;
+    border: none;
+}
+
+#titulo_invitacion{
+    padding-bottom: 50px;
+}
+
+/*Datos del usuario*/
+
+.cuadro_fondo h2{
+    font-size: 24px;
+    margin-bottom: 67px;
+}
+
+.estado{
+    position: absolute;
+    top: 44%;
+    left: 65%;
+}
+
+.cuadro_fondo p{
+    padding-top: 7px;
+}
+
+.mensaje_error input, #genero, .estado, .tipo_usuario{
+    border-radius: 30px;
+    width: 214px;
+    height: 37px;
+    margin-left: 5px;
+    border: 0.5px solid rgb(196, 188, 188);
+    padding-left: 15px;
+    font-family: "Commissioner", sans-serif;
+
+}
+
+.modificacion{
+    padding-bottom: 37px;
+}
+
+.cuadro_fondo h3{
+    padding-top: 37px;
+}
+
+.estudios textarea, .experiencia textarea, .datos_curriculum, .descripcion_empresa{
+    border: #9A7C47 1px solid;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 7px 28px, rgba(0, 0, 0, 0.22) 0px 5px 10px;
+    padding: 30px;
+    margin: 40px;
+    line-height: 30px;
+    font-family: "Commissioner", sans-serif;
+    width: 891px;
+    height: 150px;
+}
+
+
+.datos_curriculum{
+    display: flex;
+    padding: 10px 30px;
+    height: 72px;
+}
+
+.curriculum img{
+    width: 28px;
+    height: 34px;
+}
+
+
+.curriculum{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.modificacion, .mensaje_error {
+    display: flex;
+}
+
+.mensaje_error span{
+    padding-top: 10px;
+    margin-left: 15px;
+    line-height: 20px;
+    width: 400px;
+}
+
+#span_titulo{
+    font-size: 16px;
+    display: block;
+    padding-top: 20px;
+}
+
+.mensaje_error span, .btn_final button, #archivo_curriculum{
+    font-family: "Commissioner",serif;
+}
+
+.descripcion_empresa{
+    font-size: 15px;
+}
+
+
+/*Botones*/
+
+.btn_final{
+    padding-top: 30px;
+    margin-left: 5%;
+    text-align: center;
+}
+
+.btn_final button{
+    background: repeating-linear-gradient(to top, #F83600, #F9D423);
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    width: 240px;
+    height: 57px;
+    padding: 12px 35px;
+    border-radius: 50px;
+}
+
+/* Validaciones */
+
+.validacion_textarea{
+    position: absolute;
+    margin-top: 14%;
+    margin-left: -53%;
+}
+
+.validacion_curriculum{
+    position: absolute;
+    margin-top: 3.4%;
+    margin-left: -20%;
+}

@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 96px;
+    width: 100%;
+    background: #FFF2DE;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to right, #F9D423, #F83600);
+    background-position: bottom;
+    background-size: 100% 3px;
+    background-repeat: no-repeat;
+    box-sizing: border-box; 
+    z-index: 2;
+    position: fixed;
+    margin-bottom: 100px;
+}
+
+.opciones_menu a{
+    text-decoration: none;
+    color: black;
+    white-space: nowrap;
+}
+
+header img{
+    height: 90px;
+    width: 90px;
+    margin: 4px 25px;
+}
+
+.nombre_equipo{
+    font-family: 'Copse', serif;
+    width: 155px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nombre_equipo a{
+    text-decoration: none;
+    color: black;
+}
+
+.nombre_equipo h3{
+    font-size: 22px;
+}
+
+.nombre_equipo p{
+    font-size: 12px;
+}
+/*-------------------------------------------*/
+.Enlaces, .ingresar p{
+    display: flex;
+    font-family: 'Karla', sans-serif ;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.Enlaces{
+    margin-left: 760px;
+}
+
+.opciones_menu{
+    display: flex;
+    align-items: center;
+    
+}
+
+.opciones_menu img{
+    width: 43px;
+    height: 43px;
+    margin-right: 7px;
+}
+
+.opciones_menu:nth-child(-n+3){
+    border-right: solid 2px;
+    border-image: radial-gradient(#F83600, #F9D423) 1;
+    padding-right: 30px;
+}
+
+.opciones_menu:nth-child(4){
+    margin-left: 10px;
+}

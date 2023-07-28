@@ -1,0 +1,62 @@
+#titulo{
+    font-family: "Commissioner", sans-serif;
+    margin-left: 205px;
+    margin-bottom: 40px;
+    font-weight: bolder;
+    font-size: 34px;
+}
+
+#titulo{
+    padding-top: 160px;
+}
+
+.centrar_cuadro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 82px;
+}
+
+.notificacion{
+    background: #FFF2DE;
+    border-radius: 30px;
+    padding: 30px 40px;
+    width: 1450px;
+    min-height: 201px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2), 4px 0 4px rgba(0, 0, 0, 0.2);
+    font-family: "Commissioner", sans-serif;
+    color: black;
+}
+
+/*Título*/
+
+.notificacion h4{
+    font-size: 20px;
+    width: 100%;
+}
+
+/*Estilos para la parte superior de la notificación*/
+
+#cabeza_notificacion{
+    display: flex;
+    padding-top: 26px;
+    padding-bottom: 25px;
+}
+
+/*Cuerpo y fecha de la notificación*/
+
+#cabeza_notificacion p{
+    font-size: 18px;
+    width: 30%;
+}
+
+.notificacion > p{
+    margin-right: 26px;
+    line-height: 24px;
+    text-align: justify;
+}
+
+#fecha{
+    padding-top: 30px;
+    margin-left: 86%;
+}

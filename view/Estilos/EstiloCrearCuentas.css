@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Sección del encabezado */
+
+.encabezado{
+    background: #FFF2DE;
+    height: 534px;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.encabezado a{
+    text-decoration: none;
+    color: black;
+}
+
+.encabezado img{
+    height: 213px;
+    width: 246px;
+    margin: 35px 10px;
+}
+
+.encabezado h1{
+    font-family: "Copse", serif;
+    font-size: 50px;
+    font-weight: lighter;
+    margin-bottom: 30px;
+}
+
+/* Foto de perfil */
+
+#marco_foto, #marco_foto2{
+    background: #FFF2DE;
+    box-shadow: -5px 0px 5px 0px rgba(151, 151, 151, 0.5), 5px 0px 5px 0px rgba(151, 151, 151, 0.5), 0px 5px 5px 0px rgba(151, 151, 151, 0.5);
+    width: 267px;
+    height: 261px;
+    position: absolute;
+    top: 334px;
+    left: 250px;
+    z-index: 1;
+}
+
+#marco_foto2{
+    top: 134px;
+    left: 200px;
+}
+
+#fondo_marco{
+    width: 257px;
+    height: 251px;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2px;
+}
+
+#fondo_marco img{
+    width: 257px;
+    height: 251px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.foto_perfil input{
+    width: 125px;
+    font-size: 12px;
+    top: 248px;
+    left: 80px;
+    position: relative;
+}
+
+/* Cuadros */
+
+.centrar_cuadro, .centrar_cuadro2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 82px;
+}
+
+.centrar_cuadro2{
+    padding-top: 350px;
+}
+
+.crear_cuenta, .crear_cuenta2{
+    background: white;
+    min-height: 282px;
+    width: 1045px;
+    padding: 92px 115px;
+    box-shadow: -5px 0px 5px 0px rgba(151, 151, 151, 0.5), 5px 0px 5px 0px rgba(151, 151, 151, 0.5), 0px 5px 5px 0px rgba(151, 151, 151, 0.5);
+    margin-top: -130px;
+    font-family: "Commissioner", sans-serif;
+}
+
+.crear_cuenta2{
+    width: 845px;
+}
+
+/*Título y estado*/
+
+.modificacion_titulo{
+    text-align: center;
+    margin-bottom: 73px;
+}
+
+.modificacion_titulo input{
+    width: 500px;
+}
+
+.nombre{
+    font-size: 36px;
+    font-family: "Commissioner",serif;
+    border: none;
+}
+
+#titulo_invitacion, #titulo_recuperacion{
+    padding-bottom: 50px;
+}
+
+#titulo_recuperacion{
+    text-align: center;
+}
+
+
+/*Datos del usuario*/
+
+.crear_cuenta h2{
+    font-size: 24px;
+    margin-bottom: 67px;
+}
+
+.crear_cuenta p, .crear_cuenta2 p{
+    padding-top: 7px;
+}
+
+.mensajeError input, #genero, .estado, .tipo_usuario{
+    border-radius: 30px;
+    width: 214px;
+    height: 37px;
+    margin-left: 5px;
+    border: 0.5px solid rgb(196, 188, 188);
+    padding-left: 15px;
+    font-family: "Commissioner", sans-serif;
+}
+
+.modificacion{
+    padding-bottom: 37px;
+}
+
+.cuadro_fondo h3{
+    padding-top: 37px;
+}
+
+#instrucciones_recuperacion{
+    font-size: 20px;
+    padding-bottom: 50px;
+}
+
+.estudios textarea, .experiencia textarea, .datos_curriculum, .descripcion_empresa{
+    border: #9A7C47 1px solid;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 7px 28px, rgba(0, 0, 0, 0.22) 0px 5px 10px;
+    padding: 30px;
+    margin: 40px;
+    line-height: 30px;
+    font-family: "Commissioner", sans-serif;
+    width: 891px;
+    height: 150px;
+}
+
+.datos_curriculum{
+    display: flex;
+    padding: 10px 30px;
+    height: 72px;
+}
+
+.curriculum img{
+    width: 28px;
+    height: 34px;
+}
+
+.curriculum{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.modificacion, .mensajeError {
+    display: flex;
+}
+
+.mensajeError span{
+    padding-top: 10px;
+    margin-left: 15px;
+    line-height: 20px;
+    width: 400px;
+}
+
+#span_titulo{
+    font-size: 16px;
+    display: block;
+    padding-top: 20px;
+}
+
+.mensajeError span, .btn_final button, #archivo_curriculum, .validacion_foto{
+    font-family: "Commissioner",serif;
+}
+
+.descripcion_empresa{
+    font-size: 15px;
+}
+
+
+/*Botones*/
+
+.btn_final{
+    padding-top: 30px;
+    margin-left: 5%;
+    text-align: center;
+}
+
+.btn_final button{
+    background: repeating-linear-gradient(to top, #F83600, #F9D423);
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    width: 240px;
+    height: 57px;
+    padding: 12px 35px;
+    border-radius: 50px;
+}
+
+/* Validaciones */
+
+.validacion_textarea{
+    position: absolute;
+    margin-top: 14%;
+    margin-left: -53%;
+}
+
+.validacion_curriculum{
+    position: absolute;
+    margin-top: 3.4%;
+    margin-left: -20%;
+}
+
+.validacion_foto{
+    position: absolute;
+    margin-top: 102%;
+    margin-left: -90px;
+}

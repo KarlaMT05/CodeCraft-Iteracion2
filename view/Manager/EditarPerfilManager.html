@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es" >
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/Estilos/EstilosEncabezadoUsuarioFinal.css">
+    <link rel="stylesheet" href="/Estilos/EstiloEditarPerfiles.css">
+    <link rel="stylesheet" href="/Estilos/Footer.css">
+    <link rel="stylesheet" href="/Estilos/Validaciones.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300&family=Copse&family=Karla:wght@300&display=swap" rel="stylesheet">
+    <title>Editar perfil manager</title>
+</head>
+<!-- Encabezado de la página -->
+<header>
+    <!-- Sección con el logo y nombre del producto -->
+    <img src="/imagenes/Growth_logo.png">
+    <div class="nombre_equipo">
+        <h3><a href="/Manager/HomeManager.html">Growth</a></h3>
+        <p><a href="/Manager/HomeManager.html">Cultivando el crecimiento y los sueños</a></p>
+    </div> 
+    <!-- Sección con enlaces -->
+    <div class="Enlaces">
+        <div class="opciones_menu">
+            <img src="/imagenes/Notificaciones.png">
+            <a href="/Manager/NotificacionesManager.html" class="opciones">Notificaciones</a>
+        </div>
+        <div class="opciones_menu">
+            <img src="/imagenes/Reportes.png">
+            <a href="/Manager/ReportesManager.html" class="opciones">Mis reportes</a>
+        </div>
+        <div class="opciones_menu">
+            <img src="/imagenes/Mi_perfil.png">
+            <a href="/Manager/PerfilManager.html" class="opciones">Mi perfil</a>
+        </div>
+        <div class="opciones_menu">
+            <img src="/imagenes/cerrar_sesion.png">
+            <a href="/HomeGrowth.html" class="opciones">Cerrar Sesión</a>
+        </div>
+    </div>
+</header>
+<body>
+<!--Foto de perfil-->
+    <div class="foto_perfil">
+        <div id="marco_foto">
+            <div class="cuadro_fotografia">
+                <div id="fondo_marco">
+                    <img src="/imagenes/usuario.png">
+                </div>
+                <input type="file" name="foto" accept=".jpg, .png">
+            </div>
+        </div>
+    </div>
+<!--Cuadro con el perfil del usuario-->
+    <div class="centrar_cuadro">
+        <div class="cuadro_borde">
+            <div class="cuadro_fondo">
+                <form action="" id="formulario">
+                    <div class="perfil_usuario">
+                        <div class="modificacion_titulo">
+                            <h1><input class="nombre" name="nombre" type="text" value="Nombre completo del Manager">
+                            <span id="span_titulo"></span></h1>
+                        </div>
+                        <h2>Información perfil</h2>
+                        <select class="estado" name="estado">
+                            <option selected>Activo</option>
+                            <option>Inactivo</option>
+                        </select>
+                        <div class="modificacion">
+                            <p><strong>Manager de <span>"Nombre de la empresa"</span></strong></p>
+                        </div>
+                        <div class="modificacion">
+                            <p><strong>Número de Identificación:</strong>  
+                                <div class="mensaje_error">
+                                    <input type="text" name="cedula" value="0-0000-0000">
+                                    <span></span>
+                                </div>
+                            </p>
+                        </div>
+                        <div class="modificacion">
+                            <p><strong>Número de teléfono:</strong> 
+                                <div class="mensaje_error">
+                                    <input type="tel" name="telefono" value="88880000">
+                                    <span></span>
+                                </div>
+                            </p>
+                        </div>
+                        <div class="modificacion">
+                            <p><strong>Correo electrónico:</strong> ejemplo@codecraft.com</p>
+                        </div>
+                        <div class="modificacion">
+                            <p><strong>Contraseña:</strong> 
+                                <div class="mensaje_error">
+                                    <input type="password" name="contrasena" value="**********">
+                                    <span></span>
+                                </div>
+                            </p>
+                        </div>
+                        <div class="btn_final">
+                            <div class="btn">
+                                <button class="guardar_cambios">Guardar cambios</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="/JavaScript/validacionesEditarReclutadorManager.js"></script>
+</body>
+<!-- Pie de página -->
+<footer>
+    <!-- Apartado de contacto -->
+    <div id="contactanos">
+      <ul>
+        <h4>CONTÁCTANOS</h4>
+        <li>Teléfono: +506 8824 2887</li>
+        <li>WhatsApp: +506 6052 5912</li>
+        <li>Correo: serviciosinfo@growth.ac.cr</li>
+        <li>Dirección: Calle 49, a un costado del Mall San</li>
+        <li>Pedro, Montes de Oca, San José, Costa Rica</li>
+      </ul>
+    </div>
+    <!-- Apartado de información acerca de la empresa y el producto -->
+    <div id="acercade">
+      <h4>ACERCA DE</h4>
+      <div class="enlaces">
+        <img src="/imagenes/nuestro producto.png" alt="nuestro producto" />
+        <a href="/LandingPageProducto.html">Nuestro Producto</a>
+      </div>
+      <div class="enlaces">
+        <img src="/imagenes/sobre nosotros.png" alt="sobre nosotros" />
+        <a href="/LandingPageCodeCraft.html">Nuestro equipo</a>
+      </div>
+    </div>
+    <!-- Apartado de redes -->
+    <div id="redes">
+      <h4>REDES</h4>
+      <img src="/imagenes/facebook_logo.png" alt="facebook_logo" />
+      <img src="/imagenes/twitter_logo.png" alt="twitter_logo" />
+      <img src="/imagenes/instagram_logo.png" alt="instagram_logo" />
+    </div>
+    <!-- Apartado con copyright -->
+    <div id="copyright">
+        <p>&copy Copyright 2023 Growth</p>
+    </div>
+  </footer> 
+</html>

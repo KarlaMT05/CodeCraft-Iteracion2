@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/Estilos/EstilosEncabezadoAdministrador.css">
+    <link rel="stylesheet" href="/Estilos/EstiloCrearEmpleo.css" />
+    <link rel="stylesheet" href="/Estilos/Footer.css">
+    <link rel="stylesheet" href="/Estilos/Validaciones.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300&family=Copse&family=Karla:wght@300&display=swap" rel="stylesheet">
+    <title>Crear o modificar empleos</title>
+</head>
+<!-- Encabezado de la página -->
+<header>
+    <!-- Sección con el logo y nombre del producto -->
+    <img src="/imagenes/Growth_logo.png">
+    <div class="nombre_equipo">
+        <h3><a href="/Administrador/HomeAdministrador.html">Growth</a></h3>
+        <p><a href="/Administrador/HomeAdministrador.html">Cultivando el crecimiento y los sueños</a></p>
+    </div>
+    <!-- Sección con enlaces -->
+        <div class="Enlaces">
+        <div class="opciones_menu">
+            <img src="/Imagenes/crear_cuentas.png" />
+            <a href="/Administrador/CrearCuentaReclutadorManager.html" class="opciones">Crear cuentas</a>
+        </div>
+        <div class="opciones_menu">
+            <img src="/Imagenes/Invitaciones.png" />
+            <a href="/Administrador/CrearInvitacionEmpresa.html" class="opciones">Invitaciones</a>
+        </div>
+        <div class="opciones_menu">
+            <img src="/Imagenes/Notificaciones.png" />
+            <a href="/Administrador/NotificacionesAdministrador.html" class="opciones">Notificaciones</a>
+        </div>
+        <div class="opciones_menu">
+            <img src="/Imagenes/Reportes.png" />
+            <a href= "/Administrador/ReportesAdministrador.html" class="opciones">Mis reportes</a>
+        </div>
+        <div class="opciones_menu">
+            <img src="/imagenes/Mi_perfil.png" />
+            <a href="/Administrador/PerfilEmpresarial.html" class="opciones">Mi perfil</a>
+        </div>
+        <div class="opciones_menu">
+            <img src="/imagenes/cerrar_sesion.png">
+            <a href="/HomeGrowth.html" class="opciones">Cerrar Sesión</a>
+        </div>
+    </div>
+</header>
+<body>
+    <div class="pagina_principal">
+        <div class="columna_1">
+            <!--Invitacion-->
+            <div class="invitaciones">
+                <h1>Invitación</h1>
+                <p>Envía una invitación por correo a un conocido para que participe en la postulación de este empleo.</p>
+                <form action="">
+                    <label>Puesto del trabajo</label>
+                    <input type="text" name="nombrePuesto" placeholder="Ingresa el nombre del puesto" >
+                    <input type="email" name="correo" placeholder="Ingresa el correo electrónico" >
+                    <div class="espacio_mensajes">
+                        <div class="mensaje">
+                            <input type="radio" name="mensajeInvitacion">
+                            <p>Enviar mensaje predeterminado</p>
+                        </div>
+                        <div class="mensaje">
+                            <input type="radio" name="mensajeInvitacion">
+                            <p>Escribir mensaje</p>
+                        </div>
+                    </div>
+                    <textarea name="cuerpoMensaje" placeholder="Escribe tu mensaje..."></textarea>
+                    <div class="btn_guardar">
+                        <button id="enviar" type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="columna_2">
+            <div class="cuadro_borde">
+                <div class="cuadro_fondo">
+                    <div class="crear_puesto">
+                        <form action="CrearModificarEmpleo.html" method="post" enctype="multipart/form-data" id="formulario">
+                            <div class="encabezado_puesto">
+                                <h1>Información del puesto</h1>
+                                <select name="visibilidad">
+                                    <option selected>Público</option>
+                                    <option>Privado</option>
+                                </select>
+                            </div> 
+                            <p id="instrucciones">Los campos con <span id="asterisco">*</span> son obligatorios</p>
+                            <div class="cuerpo_formulario">
+                                <label> Nombre de la posición <span id="asterisco">*</span></label>
+                                <input class="ingresar_informacion" type="text" name="posicion" placeholder="Nombre de la posición"><span></span>
+                                <label> Cantidad de vacantes <span id="asterisco">*</span></label>
+                                <input class="ingresar_informacion" type="number" name="vacantes" placeholder="Cantidad de vacantes" min="0"><span></span>
+                                <label>Provincia</label>
+                                <select class="ingresar_informacion" name="elegir_provincia">
+                                    <option selected disabled> Seleccione una opción</option>
+                                    <option>San José</option>
+                                    <option>Cartago</option>
+                                    <option>Puntarenas</option>
+                                    <option>Heredia</option>
+                                    <option>Limón</option>
+                                    <option>Guanacaste</option>
+                                </select>
+                                <label>Rango Salarial <span id="asterisco">*</span></label>
+                                <select class="ingresar_informacion" name="rango_salarial">
+                                    <option selected disabled> Seleccione una opción</option>
+                                    <option>₡400 000 - ₡600 000</option>
+                                    <option>₡600 000 - ₡800 000</option>
+                                    <option>₡800 000 - ₡1 000 000</option>
+                                    <option>₡1 000 000 - ₡1 200 000</option>
+                                    <option>₡1 200 000 o más</option>
+                                </select><span></span>          
+                                <label>Requisitos Minimos <span id="asterisco">*</span></label>
+                                <div class="requisitos">
+                                    <label>Edad <span id="asterisco">*</span></label>
+                                    <select class="ingresar_informacion" name="edad">
+                                        <option selected disabled> Seleccione una opción</option>
+                                        <option>Sin preferencias</option>
+                                        <option>18 o más</option>
+                                        <option>20 o más</option>
+                                        <option>25 o más</option>
+                                        <option>30 o más</option>
+                                    </select><span></span>
+                                    <label>Género <span id="asterisco">*</span></label>
+                                    <select class="ingresar_informacion" name="genero" >
+                                        <option selected disabled> Seleccione una opción</option>
+                                        <option>Sin preferencias</option>
+                                        <option>Femenino</option>
+                                        <option>Masculino</option>
+                                    </select><span></span>
+                                    <label>Nivel de experiencia <span id="asterisco">*</span></label>
+                                    <select class="ingresar_informacion" name="experiencia" >
+                                        <option selected disabled> Seleccione una opción</option>
+                                        <option>Sin preferencias</option>
+                                        <option>0-2 años</option>
+                                        <option>3-5 años</option>
+                                        <option>5-10 años</option>
+                                        <option>10+ años</option>
+                                    </select><span></span>		
+                                    <label>Nivel de educativo <span id="asterisco">*</span></label>
+                                    <select class="ingresar_informacion" name="nivel_educativo" >
+                                        <option selected disabled> Seleccione una opción</option>
+                                        <option>Sin preferencias</option>
+                                        <option>Secundaria</option>
+                                        <option>Técnico</option>
+                                        <option>Bachillerato</option>
+                                        <option>Licenciatura</option>
+                                        <option>Doctorado</option>
+                                    </select> <span></span> 
+                                    <label>Idiomas <span id="asterisco">*</span></label>
+                                    <select class="ingresar_informacion" name="idiomas" >
+                                        <option selected disabled> Seleccione una opcion</option>
+                                        <option>Sin preferencias</option>
+                                        <option>Español</option>
+                                        <option>Inglés</option>
+                                        <option>Portugués</option>
+                                        <option>Francés</option>
+                                        <option>Italiano</option>
+                                        <option>Mandarin</option>
+                                    </select><span></span>						
+                                </div>
+                                <label> Otros</label>
+                                <textarea name="otros_requisitos" class="ingresar_informacion_grande" placeholder="Ingrese otros requisitos"></textarea>
+                                <label> Atribuciones deseables <span id="asterisco">*</span></label>
+                                <textarea name="atribuciones_deseables" class="ingresar_informacion_grande" placeholder="Ingrese las atribuciones"></textarea><span id="validacion_atribuciones"></span>
+                                <label>Estado de la aplicación</label>
+                                <select class="ingresar_informacion" name="estado" >
+                                    <option selected>Activa</option>
+                                    <option>Inactiva</option>
+                                </select>
+                            <div class="btn_guardar">
+                                <button class="enviarInfo" type="submit" name="crear">Guardar</button>
+                            </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/JavaScript/validacionesCrearModificarEmpleo.js"></script>
+</body>
+<!-- Pie de página -->
+<footer>
+    <!-- Apartado de contacto -->
+    <div id="contactanos">
+      <ul>
+        <h4>CONTÁCTANOS</h4>
+        <li>Teléfono: +506 8824 2887</li>
+        <li>WhatsApp: +506 6052 5912</li>
+        <li>Correo: serviciosinfo@growth.ac.cr</li>
+        <li>Dirección: Calle 49, a un costado del Mall San</li>
+        <li>Pedro, Montes de Oca, San José, Costa Rica</li>
+      </ul>
+    </div>
+    <!-- Apartado de información acerca de la empresa y el producto -->
+    <div id="acercade">
+      <h4>ACERCA DE</h4>
+      <div class="enlaces">
+        <img src="/imagenes/nuestro producto.png" alt="nuestro producto" />
+        <a href="/LandingPageProducto.html">Nuestro Producto</a>
+      </div>
+      <div class="enlaces">
+        <img src="/imagenes/sobre nosotros.png" alt="sobre nosotros" />
+        <a href="/LandingPageCodeCraft.html">Nuestro equipo</a>
+      </div>
+    </div>
+    <!-- Apartado de redes -->
+    <div id="redes">
+      <h4>REDES</h4>
+      <img src="/imagenes/facebook_logo.png" alt="facebook_logo" />
+      <img src="/imagenes/twitter_logo.png" alt="twitter_logo" />
+      <img src="/imagenes/instagram_logo.png" alt="instagram_logo" />
+    </div>
+    <!-- Apartado con copyright -->
+    <div id="copyright">
+        <p>&copy Copyright 2023 Growth</p>
+    </div>
+</footer> 
+</html> 

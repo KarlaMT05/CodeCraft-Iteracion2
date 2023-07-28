@@ -1,0 +1,172 @@
+body {
+    background: #fffbf4;
+    height: 100%;
+}
+  
+.pagina_principal{
+    padding: 200px 146px;
+    padding-right: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.columna_1, .columna_2{
+    column-count: 1;
+}
+
+.columna_1{
+    margin-right: 140px;
+}
+
+/* Cuadros con degradados redondeados */
+
+.cuadro_borde{
+    background: linear-gradient(to left, #F9D423, #F83600);
+    border-radius: 40px;
+    width: 817px;
+    height: fit-content;
+    padding: 5px;
+}
+
+.cuadro_fondo{
+    border-radius: 40px;
+    min-height: 182px;
+    width: 731px;
+    background: white;
+    padding: 42px;
+    font-family: "Commissioner", sans-serif;
+}
+
+/* Filtros */
+
+.filtro {
+    margin-top: 40px;
+    margin-left: 20px;
+    vertical-align: top;
+}
+  
+.filtro_individual {
+    display: flex;
+    margin-bottom: 25px;
+}
+  
+.imagen_filtro {
+    background: #ffd971;
+    width: 55px;
+    border-top-left-radius: 45%;
+    border-bottom-left-radius: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -20px;
+    z-index: 1;
+}
+
+.imagen_filtro img{
+    width: 30px;
+    height: 30px;
+}
+
+.filtro_individual input, .filtro_individual select{
+    font-family: "Commissioner", sans-serif;
+    width: 327px;
+    height: 47px;
+    padding-left: 30px;
+    border: none;
+    border-radius: 50px;
+}
+  
+.filtro button{
+    background: repeating-linear-gradient(to top, #F83600, #F9D423);
+    font-family: "Commissioner", sans-serif;
+    width: 165px;
+    height: 50px;
+    font-weight: bolder;
+    margin-left: 105px;
+    margin-top: 50px;
+    border: none;
+    border-radius: 25px;
+}
+
+/* Reporte de aplicaciones */
+
+.encabezado_reportes{
+    border-bottom: 2px solid #f87400;
+    display: flex;
+    gap: 35%;
+    margin: 0px -42px;
+}
+
+.encabezado_reportes h3{
+    font-size: 24px;
+    padding-left: 42px;
+    padding-bottom: 30px;
+}
+
+.encabezado_postulacion{
+    display: flex;
+    gap: 42%;
+    margin-left: -10px;
+}
+
+.ofertas{
+    padding: 42px 30px;
+    padding-bottom: 0px;
+}
+
+.info_candidato{
+    border-bottom: 2px solid #f87400;
+    padding: 40px 0px;
+    margin: 0px -40px;
+}
+
+.ofertas_2 {
+    display: flex;
+    justify-content: center;
+}
+
+.ofertas h1{
+    font-size: 24px;
+    display: inline-block
+}
+
+.informacion{
+    padding-right: 30px;
+}
+
+.informacion p{
+    padding-bottom: 12px;
+    text-align: justify;
+    width: 480px;
+    word-wrap: break-word;
+}
+  
+.logo_empresa img{
+    width: 175px;
+    height: 137px;
+    margin-top: -50px;
+}
+
+.inferior_reportes{
+    display: flex;
+    text-align: right;
+    align-items: right;
+    padding-top: 20px;
+    margin-left: 73%;
+}
+
+.inferior_reportes img{
+    width: 31px;
+    height: 31px;
+}
+
+.inferior_reportes a{
+    font-size: 20px;
+    text-decoration: none;
+    color: orange;
+    font-weight: bold;
+    display: flex;
+    justify-content: right;
+    padding-top: 5px;
+    padding-left: 10px;
+}

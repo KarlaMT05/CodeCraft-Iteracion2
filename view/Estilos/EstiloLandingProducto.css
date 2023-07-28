@@ -1,0 +1,485 @@
+body{
+    font-family: "Comissioner",sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.contenedor_seccion_1{
+    display: flex;
+    padding: 2rem;
+    justify-content: space-between;
+}
+
+.imagen_vacia{
+    width: 615px;
+    height: 409px;
+    border: 1px solid black;
+    margin-right: 5rem;
+}
+
+.seccion_1 p{
+    font-size: 20px;
+    width: 489px;
+    height: 157px;
+    padding-top: 20px;
+}
+
+.seccion_1{
+    padding: 2rem 5rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+.contenedor_btn{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.contenedor_btn a{
+    padding-top: 40px;
+    padding-left: 90px;
+    font-size: 25px;
+}
+.btn_1{
+    width: 246px;
+    height: 64px;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px 35px;
+    border-radius: 50px;
+    margin: 3rem 3rem 3rem 10rem;
+    border: 0;
+    background-image: radial-gradient(circle, rgba(248,54,0,1) 0%, rgba(249,212,35,1)100%);
+}
+
+/* inicion seccion 2 */
+
+.contenedor_seccion_2{
+    display: flex;
+    flex-direction: column;
+        padding: 2rem;
+    justify-content: space-between;
+    background-color: #FFF2DE;
+}
+
+.imagen_vacia2{
+    width: 615px;
+    height: 409px;
+    border: 1px solid black;
+    margin-right: 5rem;
+    background-color: white;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.seccion_2{
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+
+}
+.frases{
+    display: flex;
+}
+.frases p{
+    padding: 2rem 5rem ;
+
+   
+}
+
+.texto1{
+    width: 922px;
+    height: 157px;
+    font-size: 20px;
+    text-align: center;
+
+}
+.seccion_2 h2{
+    font-size: 48px;
+    padding: 2rem;
+}
+
+
+
+.contenedor_seccion_3{
+display: flex; justify-content: center;
+flex-direction: column;
+align-items: center;
+
+}
+.titulo_ventajas h2{
+    width: 192px;
+    height: 42px;
+    font-size: 48px;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.titulo1y3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo2y4{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: row-reverse;
+}
+
+.texto1y3 h3, .texto2y4 h3{
+    font-size: 32px;
+}
+
+.texto1y3 p, .texto2y4 p{
+    width: 363px;
+    height: 148px;
+    margin-top: 2rem;
+}
+
+
+.imagen_vacia1, .imagen_vacia22, .imagen_vacia3, .imagen_vacia4{
+    width: 372px;
+    height: 266px;
+    padding: 2rem;
+    margin: 3rem;
+    border: solid 2px;
+    border-image: radial-gradient(#F83600,#F9D423)1;
+}
+
+
+
+.caracteristicas{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #FFF2DE;
+    align-items: center;
+}
+
+.caracteristicas h2{
+    width: 332px;
+    height: 42px;
+    font-size: 48px;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.links_Secciones{
+    display: flex;
+    width: 1357px;
+    font-size: 20px;  
+    align-items: center;
+    margin: 3rem;
+    border-bottom: solid 2px;
+    border-image: radial-gradient(#F83600,#F9D423)1;
+    justify-content: center;
+}
+.links_Secciones a{
+    margin: 1rem 2rem;
+}
+
+
+.final_pagina{
+    display: flex;
+    justify-content: center;
+    background-color: #FFF2DE;
+}
+
+.final_pagina h3{
+ 
+    font-size: 32px;
+    margin-top: 2rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.final1, .final2, .final3{
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+}
+
+.final_pagina p{
+    width: 363px;
+    margin: 2rem;
+}
+
+
+
+footer{
+    background: linear-gradient(to right, #fa5829,#fadb46); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    footer p {
+        color: white ;
+    }  
+.footerp{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 1rem;
+}
+.footerlogos a img{
+    width: 40px;
+    height: 40px;
+}
+/* tablet */
+
+@media only screen and (min-device-width: 600px) and (max-device-width:1200px){
+
+    .imagen_vacia{
+        width: 475px;
+        height: 299px;
+        border: 1px solid black;
+        
+    }
+    .seccion_1 p{
+        font-size: 18px;
+        width: 412px;
+        height: 123px;
+        padding-top: 20px;
+    }
+
+    .btn_1{
+        width: 246px;
+        height: 64px;
+        color: black;
+        font-size: 20px;
+        font-weight: 600;
+        padding: 12px 35px;
+        border-radius: 50px;
+        margin: 5rem 1.5rem 1.5rem 5rem;
+        border: 0;
+        background-image: radial-gradient(circle, rgba(248,54,0,1) 0%, rgba(249,212,35,1)100%);
+    }
+
+    /* seccion 2 */
+    .frases p{
+        padding: 2rem 5rem ;
+    
+       
+    }
+    
+    .texto1{
+        width: 852px;
+        height: 157px;
+        font-size: 20px;
+        text-align: center;
+    
+    }
+    .seccion_2 h2{
+        font-size: 48px;
+        padding: 2rem;
+    }
+    .imagen_vacia2{
+        margin-right: 0;
+        }
+    .titulo_ventajas h2{
+            width: 172px;
+            height: 42px;
+            font-size: 40px;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+   
+    .imagen_vacia1, .imagen_vacia22, .imagen_vacia3, .imagen_vacia4{
+            width:271px;
+            height: 191px;
+            padding: 1rem;
+            margin: 1.5rem;
+            border: solid 2px;
+            border-image: radial-gradient(#F83600,#F9D423)1;
+    }
+
+    .caracteristicas h2{
+        width: 277px;
+        height: 25px;
+        font-size: 40px;
+        margin-top: 2rem;
+        text-align: center;
+    }
+    .links_Secciones{
+        display: flex;
+        width: 834px;
+        font-size: 20px;  
+        align-items: center;
+        margin: 1rem;
+        border-bottom: solid 2px;
+        border-image: radial-gradient(#F83600,#F9D423)1;
+        justify-content: center;
+    }
+    .final_pagina h3{
+ 
+            font-size: 28px;
+            margin-top: 2rem;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .final_pagina p{
+            width: 265px;
+            height: 161px;
+            margin: 2rem;
+        }
+}
+
+/* mobile device */
+@media only screen and (min-device-width: 100px) and (max-device-width:500px){
+
+
+    .contenedor_seccion_1{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .seccion_1 {
+        align-items: center;
+    }
+
+    .imagen_vacia{
+        width: 427px;
+        height: 326px;
+        border: 1px solid black;
+        justify-content: center;
+        margin-left: 2rem;
+    }
+    .seccion_1 p{
+        font-size: 20px;
+        width: 601px;
+        height: 123px;
+        padding-top: 20px;
+    }
+
+    .btn_1{
+        width: 246px;
+        height: 64px;
+        color: black;
+        font-size: 20px;
+        font-weight: 600;
+        padding: 12px 35px;
+        border-radius: 50px;
+        margin: 5rem 1.5rem 1.5rem 5rem;
+        border: 0;
+        background-image: radial-gradient(circle, rgba(248,54,0,1) 0%, rgba(249,212,35,1)100%);
+    }
+
+    /* seccion 2 */
+    .frases p{
+        padding: 2rem 5rem ;
+    
+       
+    }
+    
+    .texto1{
+        width: 852px;
+        height: 157px;
+        font-size: 20px;
+        text-align: center;
+    
+    }
+    .seccion_2 h2{
+        font-size: 48px;
+        padding: 2rem;
+    }
+    .imagen_vacia2{
+        margin-right: 0;
+        }
+    .titulo_ventajas h2{
+            width: 172px;
+            height: 42px;
+            font-size: 40px;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+   
+    .imagen_vacia1, .imagen_vacia22, .imagen_vacia3, .imagen_vacia4{
+            width:271px;
+            height: 191px;
+            padding: 1rem;
+            margin: 1.5rem;
+            border: solid 2px;
+            border-image: radial-gradient(#F83600,#F9D423)1;
+    }
+
+    .caracteristicas h2{
+        width: 277px;
+        height: 25px;
+        font-size: 40px;
+        margin-top: 2rem;
+        text-align: center;
+    }
+    .links_Secciones{
+        display: flex;
+        width: 834px;
+        font-size: 20px;  
+        align-items: center;
+        margin: 1rem;
+        border-bottom: solid 2px;
+        border-image: radial-gradient(#F83600,#F9D423)1;
+        justify-content: center;
+    }
+    .final_pagina h3{
+ 
+            font-size: 28px;
+            margin-top: 2rem;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .final_pagina p{
+            width: 265px;
+            height: 161px;
+            margin: 1rem;
+        }
+        .final_pagina{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            background-color: #FFF2DE;
+        }
+        .footerp{
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            align-items: center;
+            padding: 1rem;
+        }
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

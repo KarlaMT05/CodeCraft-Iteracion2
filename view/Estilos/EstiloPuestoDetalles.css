@@ -1,0 +1,166 @@
+body{
+    background: #FFFBF4;
+}
+
+/* Foto de perfil */
+
+#marco_foto{
+    background: linear-gradient(to left, #F9D423, #F83600);
+    border-radius: 50%;
+    width: 217px;
+    height: 211px;
+    position: absolute;
+    top: 140px;
+    left: 200px;
+    z-index: 1;
+}
+
+#fondo_marco{
+    border-radius: 50%;
+    width: 207px;
+    height: 201px;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2px;
+}
+
+#fondo_marco img{
+    border-radius: 50%;
+    width: 207px;
+    height: 201px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Cuadros */
+
+.centrar_cuadro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 200px;
+    margin-bottom: 82px;
+}
+
+.cuadro_borde{
+    background: linear-gradient(to left, #F9D423, #F83600);
+    border-radius: 40px;
+    width: 1275px;
+    min-height: 292px;
+    padding: 5px;
+}
+
+.cuadro_fondo{
+    border-radius: 40px;
+    min-height: 282px;
+    width: 1045px;
+    background: white;
+    padding: 92px 115px;
+    font-family: "Commissioner", sans-serif;
+}
+
+/*Título*/
+
+.cuadro_fondo h1{
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 73px;
+}
+
+/* Datos principales del puesto */
+
+.encabezado_puesto{
+    display: flex;
+    gap: 60%;
+    margin-left: -40px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #f87400;
+}
+
+.encabezado_puesto p{
+    padding-bottom: 15px;
+    font-size: 22px;
+}
+
+.lado_izquierdo{
+    margin-left: 40px;
+}
+
+.lado_derecho{
+    margin-top: 20px;
+}
+
+/* Descripción de la empresa */
+
+.sobre_empresa{
+    padding: 40px 0px;
+    margin-left: -40px;
+    border-bottom: 2px solid #f87400;
+}
+
+.sobre_empresa h3, .sobre_empresa p{
+    margin-left: 40px;
+}
+
+.sobre_empresa h3{
+    font-size: 22px;
+    padding-bottom: 30px;
+}
+
+.sobre_empresa p{
+    text-align: justify;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+/* Información y requisitos sobre el puesto */
+
+.informacion_puesto{
+    padding-top: 40px;
+}
+
+.informacion_puesto h4{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.informacion_puesto p, .informacion_puesto ul{
+    font-size: 18px;
+    padding-bottom: 20px;
+    margin-left: 25px;
+}
+
+.informacion_puesto ul{
+    margin-left: 35px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+/*Botones*/
+
+.btn_final{
+    padding-top: 30px;
+    margin-left: 45%;
+    text-align: center;
+}
+
+.btn{
+    background: repeating-linear-gradient(to top, #F83600, #F9D423);
+    border: none;
+    font-size: 18px;
+    font-weight: bolder;
+    width: 98px;
+    height: 20px;
+    padding: 20px 50px;
+    border-radius: 20px;
+}
+
+.btn a{
+    text-decoration: none;
+    color: black;
+}

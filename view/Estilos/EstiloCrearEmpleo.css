@@ -1,0 +1,212 @@
+body {
+    background: #fffbf4;
+    height: 100%;
+}
+  
+.pagina_principal{
+    padding: 200px 146px;
+    padding-right: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.columna_1, .columna_2{
+    column-count: 1;
+}
+
+.columna_1{
+    margin-right: 140px;
+}
+
+/* Cuadros con degradados redondeados */
+
+.cuadro_borde, .cuadro_borde_invitacion{
+    background: linear-gradient(to left, #F9D423, #F83600);
+    border-radius: 40px;
+    width: 817px;
+    height: fit-content;
+    padding: 5px;
+}
+
+.cuadro_fondo, .cuadro_fondo_invitacion{
+    border-radius: 40px;
+    min-height: 182px;
+    width: 731px;
+    background: white;
+    padding: 42px;
+    font-family: "Commissioner", sans-serif;
+}
+
+.cuadro_borde_invitacion{
+    width: 541px;
+}
+
+.cuadro_fondo_invitacion{
+    width: 455px;
+}
+
+/* Invitaciones */
+
+.invitaciones{
+    width: 455px;
+    min-height: 820px;
+    background-color: #FFF2DE;
+    border-radius: 20px;
+    font-family: "Commissioner", sans-serif;
+    margin-bottom: 53px;
+    margin-right: 80px;
+}
+
+.invitaciones h1{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 800;
+    padding-top: 37px;
+    margin-bottom: 40px;
+}
+
+.invitaciones p, .invitaciones label, .invitaciones input, .invitaciones textarea{
+    display: block;
+    font-size: 16px;
+    text-align: left;
+    margin-left: 37px;
+}
+
+.invitaciones p{
+    font-weight: bold;
+    line-height: 30px;
+    margin-bottom: 35px;
+}
+
+.invitaciones input{
+    width: 335px;
+    height: 50px;
+    margin-top: 23px;
+    padding-left: 15px;
+    border: none;
+    border-radius: 40px;
+}
+
+.espacio_mensajes{
+    text-align: left;
+}
+
+.invitaciones input[type="radio"]{
+    width: 16px;
+    height: 16px;
+}
+
+.mensaje p{
+    margin-left: 10px;
+    margin-top: 17px;
+    margin-bottom: 0px;
+}
+
+.mensaje input, .mensaje p{
+    display: inline-block;
+    text-align: left;
+}
+
+.invitaciones textarea{
+    width: 335px;
+    height: 192px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 37px;
+    font-family: "Commissioner", sans-serif;
+    padding: 10px;
+}
+
+.btn_guardar{
+    display: flex;
+    justify-content: center;
+}
+
+
+#enviar, .crear_puesto button {
+    background: repeating-linear-gradient(to top, #F83600, #F9D423);
+    border: none;
+    font-size: 16px;
+    font-weight: bolder;
+    width: 158px;
+    height: 47px;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+/* Formulario para crear o modificar un puesto */
+
+.encabezado_puesto{
+    display: flex;
+    gap: 24%;
+    margin-bottom: 20px;
+}
+
+.encabezado_puesto h1{
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+.encabezado_puesto select{
+    font-size: 20px;
+    border: rgb(180, 180, 180) 1px solid;
+    width: 214px;
+    padding: 15px 20px;
+    border-radius: 40px;
+}
+
+#instrucciones{
+    font-size: 20px;
+    padding-bottom: 60px;
+}
+
+#asterisco{
+    color: red;
+    font-weight: bolder;
+}
+
+/* Solicitar datos */
+
+.cuerpo_formulario label{
+    display: flex;
+    padding-bottom: 30px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.ingresar_informacion, .ingresar_informacion_grande{
+    font-family: "Commissioner", sans-serif;
+    width: 500px;
+    height: 50px;
+    border: rgb(180, 180, 180) 1px solid;
+    border-radius: 48px;
+    font-size: 15px;
+    padding-left: 20px;
+    margin-bottom: 65px;
+}
+
+.requisitos{
+    margin-left: 25px;
+}
+
+.ingresar_informacion_grande{
+    width: 717px;
+    height: 287px;
+    padding-top: 20px;
+}
+
+.crear_puesto button {
+    margin-top: 0px;
+}
+
+/* Validaciones */
+
+.validaciones{
+    display: block;
+}
+
+#validacion_atribuciones{
+    position: absolute;
+    margin-top: -60px;
+}

@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 96px;
+    background: #FFF2DE;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to right, #F9D423, #F83600);
+    background-position: bottom;
+    background-size: 100% 3px;
+    background-repeat: no-repeat;
+    box-sizing: border-box;  
+    z-index: 2;
+    position: fixed;
+}
+
+.opciones_menu a, .ingresar a{
+    text-decoration: none;
+    color: black;
+}
+
+header img{
+    height: 90px;
+    width: 90px;
+    margin: 4px 25px;
+}
+
+.nombre_equipo{
+    font-family: 'Copse', serif;
+    width: 155px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nombre_equipo h3{
+    font-size: 22px;
+}
+
+.nombre_equipo p{
+    font-size: 12px;
+}
+
+.Enlaces, .ingresar a, .ingresar p{
+    display: flex;
+    font-family: 'Karla', sans-serif ;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+}
+
+.Enlaces{
+    margin-left: 200px;
+}
+
+.opciones_menu, .ingresar{
+    display: flex;
+    align-items: center;
+    
+}
+
+.opciones_menu{
+    margin-left: 40px;
+}
+
+.opciones_menu img{
+    width: 24px;
+    height: 24px;
+    margin-right: 7px;
+}
+
+/*Bordes*/
+.cuadro{
+    background: linear-gradient(to left, #F9D423, #F83600);
+    border-radius: 10px;
+    width: 139px;
+    height: 45px;
+    font-family: "Commissioner", sans-serif;
+    position: relative;
+    margin-top: 0px;
+    margin-left: 50px;
+    vertical-align: top;
+    text-align: left;
+}
+
+.cuadro_2{
+    border-radius: 10px;
+    height: 36px;
+    width: 130px;
+    background: #FFF2DE;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2px;
+}
+
+.ingresar{
+    margin-left: 50px;
+}
+
+.ingresar a, .ingresar p{
+    position: relative;
+    top: 50%;
+    left: 63%;
+    transform: translate(-50%, -50%);
+}
+
+/* Sublista */
+
+.sublista{
+    display: none;
+    margin-left: -7px;
+    margin-top: -1px;
+    position: absolute;
+    top: 44px;
+}
+
+.sublista a{
+    margin-left: 0px;
+    border: 1px solid #F87400;
+    padding: 11px 25px;
+    border-radius: 10px;
+    top: 20px;
+    left: 60px;
+}
+
+.sublista ul{
+    list-style: none;
+    background-color: #FFF2DE;
+    padding: 10px;
+    border: 1px solid #F87400;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.sublista a:first-child{
+    margin-bottom: 7px;
+}

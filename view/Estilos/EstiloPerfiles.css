@@ -1,0 +1,174 @@
+body{
+    background: #FFFBF4;
+}
+
+/* Foto de perfil */
+
+#marco_foto{
+    background: linear-gradient(to left, #F9D423, #F83600);
+    border-radius: 50%;
+    width: 217px;
+    height: 211px;
+    position: absolute;
+    top: 140px;
+    left: 200px;
+    z-index: 1;
+}
+
+#fondo_marco{
+    border-radius: 50%;
+    width: 207px;
+    height: 201px;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2px;
+}
+
+#fondo_marco img{
+    border-radius: 50%;
+    width: 207px;
+    height: 201px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Cuadros */
+
+.centrar_cuadro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 200px;
+    margin-bottom: 82px;
+}
+
+.cuadro_borde{
+    background: linear-gradient(to left, #F9D423, #F83600);
+    border-radius: 40px;
+    width: 1275px;
+    min-height: 292px;
+    padding: 5px;
+}
+
+.cuadro_fondo{
+    border-radius: 40px;
+    min-height: 282px;
+    width: 1045px;
+    background: white;
+    padding: 92px 115px;
+    font-family: "Commissioner", sans-serif;
+}
+
+/*Título*/
+
+.cuadro_fondo h1{
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 73px;
+}
+
+/*Datos del usuario*/
+
+.cuadro_fondo h2{
+    font-size: 24px;
+    margin-bottom: 67px;
+}
+
+.cuadro_fondo p{
+    padding-bottom: 37px;
+}
+
+.cuadro_fondo h3{
+    padding-top: 37px;
+}
+
+.estudios p, .experiencia p, .datos_curriculum, .estado_aplicacion select{
+    border: #9A7C47 1px solid;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 7px 28px, rgba(0, 0, 0, 0.22) 0px 5px 10px;
+    padding: 30px;
+    margin: 40px;
+    line-height: 30px;
+}
+
+.datos_curriculum{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+
+.curriculum img{
+    width: 28px;
+    height: 34px;
+    vertical-align: top;
+}
+
+.curriculum p{
+    padding-bottom: 0px;
+}
+
+.curriculum{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.cuadro_fondo a{
+    text-decoration: none;
+    color: black;
+}
+
+#descripcion_empresa{
+    line-height: 30px;
+    padding-top: 30px;
+}
+
+#fecha{
+    position: absolute;
+    top: 44%;
+    left: 65%;
+}
+
+/* Estilos para el espacio de estado de la aplicación */
+
+.estado_aplicacion span{
+    color: red;
+    font-weight: bolder;
+}
+
+.estado_aplicacion select{
+    font-size: 16px;
+    width: 403px;
+}
+
+/*Botones*/
+
+.btn{
+    background: repeating-linear-gradient(to top, #F83600, #F9D423);
+    border: none;
+    font-size: 18px;
+    font-weight: bolder;
+    width: 98px;
+    height: 20px;
+    padding: 20px 50px;
+    border-radius: 20px;
+}
+
+.btn_final{
+    padding-top: 30px;
+    margin-left: 45%;
+    text-align: center;
+}
+
+.btn_final button{
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+}

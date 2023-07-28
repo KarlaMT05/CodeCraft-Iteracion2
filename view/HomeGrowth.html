@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/Estilos/EstilosEncabezadoGrowth.css">
+    <link rel="stylesheet" href="/Estilos/EstilosHomeGrowth.css">
+    <link rel="stylesheet" href="/Estilos/Footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300;500&family=Copse&family=Karla:wght@300&display=swap" rel="stylesheet">
+    <title>Home Growth</title>
+</head>
+<!-- Encabezado de la página principal de Growth -->
+<header>
+    <!-- Sección con el logo y nombre del producto -->
+    <img src="/imagenes/Growth_logo.png">
+    <div class="nombre_equipo">
+        <h3>Growth</h3>
+        <p>Cultivando el crecimiento y los sueños</p>
+    </div>
+    <!-- Sección con enlaces -->
+    <div class="Enlaces">
+        <div class="opciones_menu">
+            <img src="/imagenes/buscar_empleo.png">
+            <a href="#pasos_crear_cuenta" class="opciones">Buscar empleo</a>
+        </div>
+        <div class="opciones_menu">
+            <img src="/imagenes/publicar_empleos.png">
+            <a href="#pasos_publicar_ofertas" class="opciones">Publicar empleos</a>
+        </div>
+        <div class="opciones_menu">
+            <img src="/imagenes/nuestro_producto.png">
+            <a href="/LandingPageProducto.html" class="opciones">Nuestro producto</a>
+        </div>
+        <div class="opciones_menu">
+            <img src="/imagenes/sobre_nosotros.png">
+            <a href="/LandingPageCodeCraft.html" class="opciones">Sobre nosotros</a>  
+        </div>
+    </div> 
+     <!-- Sección para crear una cuenta o iniciar sesión -->
+    <div class="ingresar">
+        <div id="cuadro_crear_cuenta" class="cuadro">
+            <div class="cuadro_2">
+                <p class="crear_cuenta">Crear cuenta</p>
+                <div id="sublista_crear_cuenta" class="sublista">
+                    <ul>
+                        <li><a href="/Crear cuenta - Iniciar Sesion/CrearCuentaUsuarioFinal.html">Aplicante</a></li>
+                        <li><a href="/Crear cuenta - Iniciar Sesion/CrearEmpresa.html">Empresa</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="cuadro">
+            <div class="cuadro_2">
+                <a href="/Crear cuenta - Iniciar Sesion/InicioSesion.html">Iniciar Sesión</a>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Cuerpo de la página -->
+<body>
+ <!-- Sección para filtrar empleos -->
+    <div class="parte_superior">
+        <img src="/imagenes/fondo_buscador.png" alt="">
+        <div class="filtrar_empleos">
+            <h1>Busca un empleo de tu interés:</h1>
+            <form id="filtrar">
+                <input type="text" name="palabra_clave" placeholder="Categoría, empresa o palabra clave">
+                <select name="provincia">
+                    <option selected>Provincia</option>
+                    <option>San José</option>
+                    <option>Alajuela</option>
+                    <option>Heredia</option>
+                    <option>Cartago</option>
+                    <option>Limón</option>
+                    <option>Puntarenas</option>
+                    <option>Guanacaste</option>
+                </select>
+                <button id="boton_filtrar" type="submit" name="filtrar">Buscar ofertas</button>
+            </form>
+        </div>
+    </div>
+ <!-- Sección con características sobre los empleos que se ofrecen -->
+    <div class="caracteristicas_empleos">
+        <h2>Encuentra trabajos en:</h2>
+        <div class="imagen_texto">
+            <img src="/imagenes/salario.png">
+            <p>₡800,000 o más</p>
+        </div>
+        <div class="imagen_texto">
+            <img src="/imagenes/medio_tiempo.png">
+            <p>Medio tiempo o tiempo completo</p>
+        </div>
+        <div class="imagen_texto">
+            <img src="/imagenes/teletrabajo.png">
+            <p>Teletrabajo</p>
+        </div>
+        <div class="imagen_texto">
+            <img src="/imagenes/jefe.png">
+            <p>Jefe / Supervisor / Senior</p>
+        </div>
+    </div>
+ <!-- Sección con ejemplos de áreas para encontrar trabajo -->
+    <div class="areas">
+        <h2>Encuentra ofertas en áreas como:</h2>
+        <img id="flecha_izquierda" src="/imagenes/flecha_izquierda.png">
+        <img id="flecha_derecha" src="/imagenes/flecha_derecha.png">
+        <div class="cuadro_texto">
+            <img src="/imagenes/ingenieria.png">
+            <div class="texto_ofertas"><p>Ingenierías</p></div>
+        </div>
+        <div class="cuadro_texto">
+            <img src="/imagenes/medicina.png">
+            <div class="texto_ofertas"><p>Salud, medicina, enfermería y farmacia</p></div>
+        </div>
+        <div class="cuadro_texto">
+            <img src="/imagenes/docencia.png">
+            <div class="texto_ofertas"><p>Educación, docencia e investigación</p></div>
+        </div>
+    </div>
+ <!-- Sección con ejemplos de empresas en los que se puede buscar empleos -->
+    <div class="empresas">
+        <h2>Busca empleos en empresas reconocidas</h2>
+        <img id="flecha_izquierda_2" src="/imagenes/flecha_izquierda.png">
+        <img id="flecha_derecha_2" src="/imagenes/flecha_derecha.png">
+        <div class="grupo_empresas">
+            <div class="logo_empresas"> <img src="/imagenes/Amazon_logo.png"></div>
+            <div class="logo_empresas"> <img src="/imagenes/Intel_logo.png"></div>
+            <div class="logo_empresas"> <img src="/imagenes/Sykes_logo.png"></div>
+            <div class="logo_empresas"> <img src="/imagenes/Claro_logo.png"></div>
+            <div class="logo_empresas"> <img src="/imagenes/recope_logo.png"></div>
+            <div class="logo_empresas"> <img src="/imagenes/P_G_logo.png"></div>
+        </div>
+    </div>
+ <!-- Sección con los pasos a seguir para crear una cuenta y buscar trabajo -->
+    <div id="pasos_crear_cuenta" class="pasos_crear_cuenta">
+        <div class="columna_pasos">
+            <h3>Crea una cuenta para empezar a aplicar a puestos:</h3>
+            <div class="lista_pasos">
+                <img src="/imagenes/registro.png">
+                <p>Da click en  “crear cuenta”,  elige la opción de “aplicante” e ingresa tus datos y confírmalos.</p>
+            </div>
+            <div class="lista_pasos">
+                <img src="/imagenes/navegar.png">
+                <p>Navega entre los puestos de trabajo disponibles y postúlate en el que más te interese.</p>
+            </div>
+            <div class="lista_pasos">
+                <img src="/imagenes/invitaciones2.png">
+                <p>Puedes recibir invitaciones a puestos de trabajo públicos o privados y postularte a ellos.</p>
+            </div>
+            <div class="lista_pasos">
+                <img src="/imagenes/estados.png">
+                <p>Revisa el estado de las aplicaciones que haz hecho.</p>
+            </div>
+            <div class="lista_pasos">
+                <img src="/imagenes/modificar.png">
+                <p>Puedes modificar la información de tu perfil para mantenerlo actualizado.</p>
+            </div>
+            <button id="boton_crear" name="crear"><a href="/Crear cuenta - Iniciar Sesion/CrearCuentaUsuarioFinal.html">Crear cuenta</a></button>
+        </div>
+        <img id="img_crear_cuenta" src="/imagenes/crear_cuenta.png">
+    </div>
+ <!-- Sección con los pasos para publicar ofertas de empleo -->
+    <div id="pasos_publicar_ofertas" class="pasos_publicar_ofertas">
+        <h3>Empieza a publicar tus ofertas de empleo</h3>
+        <div class="grupo_lista">
+            <div class="lista_pasos_2">
+                <img src="/imagenes/publicar.png">
+                <div class="texto">
+                    <h4>Publica tu vacante</h4>
+                    <p>Crea fácilmente tus puestos de trabajo, ingresando los datos requeridos</p>
+                </div>
+            </div>
+            <div class="lista_pasos_2">
+                <img src="/imagenes/revisar.png">
+                <div class="texto">
+                    <h4>Revisa los candidatos</h4>
+                    <p>Filtra la información para buscar personas que cumplan con los requisitos necesarios</p>
+                </div>
+            </div>
+            <div class="lista_pasos_2">
+                <img src="/imagenes/enviar.png">
+                <div class="texto">
+                    <h4>Envía invitaciones</h4>
+                    <p>Invita a un usuario a que aplique a una posición o para que forme parte de tu empresa</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/JavaScript/menuDesplegable.js"></script>
+</body> 
+<!-- Pie de página -->
+<footer>
+    <!-- Apartado de contacto -->
+    <div id="contactanos">
+      <ul>
+        <h4>CONTÁCTANOS</h4>
+        <li>Teléfono: +506 8824 2887</li>
+        <li>WhatsApp: +506 6052 5912</li>
+        <li>Correo: serviciosinfo@growth.ac.cr</li>
+        <li>Dirección: Calle 49, a un costado del Mall San</li>
+        <li>Pedro, Montes de Oca, San José, Costa Rica</li>
+      </ul>
+    </div>
+    <!-- Apartado de redes -->
+    <div id="redes">
+      <h4>REDES</h4>
+      <img src="/imagenes/facebook_logo.png" alt="facebook_logo" />
+      <img src="/imagenes/twitter_logo.png" alt="twitter_logo" />
+      <img src="/imagenes/instagram_logo.png" alt="instagram_logo" />
+    </div>
+    <!-- Apartado con copyright -->
+    <div id="copyright">
+        <p>&copy Copyright 2023 Growth</p>
+    </div>
+</footer> 
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es" >
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/Estilos/EstiloCrearCuentas.css">
+    <link rel="stylesheet" href="/Estilos/Footer.css">
+    <link rel="stylesheet" href="/Estilos/Validaciones.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300&family=Copse&family=Karla:wght@300&display=swap" rel="stylesheet">
+    <title>Olvidar contraseña</title>
+</head>
+<body>
+<!-- Encabezado de la página -->
+<div class="encabezado">
+    <img src="/imagenes/Growth_logo.png">
+    <h1><a href="/HomeGrowth.html">Growth</a></h1>
+</div>
+<!--Cuadro con el perfil del usuario-->
+    <div class="centrar_cuadro">
+        <div class="crear_cuenta2">
+            <form action="" id="formulario">
+                <div class="perfil_usuario">
+                    <h1 id="titulo_recuperacion">Recuperar Contraseña</h1>
+                    <p id="instrucciones_recuperacion">Para recuperar su contraseña, escriba su número de cédula y correo electrónico asociados a la cuenta. Si ambos datos coinciden con la información de su cuenta, se enviará un correo electrónico con los pasos a seguir.</p>
+                    <div class="modificacion">
+                        <p><strong>Cédula:</strong>  
+                            <div class="mensajeError">
+                                <input type="text" name="cedula" placeholder="0-0000-0000">
+                                <span></span>
+                            </div>
+                        </p>
+                    </div>
+                    <div class="modificacion">
+                        <p><strong>Correo electrónico:</strong></p>
+                        <div class="mensajeError">
+                            <input type="email" name="correo"  placeholder="ejemplo@codecraft.com">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="btn_final">
+                        <div class="btn">
+                            <button class="guardar_cambios">Recuperar</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="/JavaScript/validacionesRecuperarContrasena.js"></script>
+</body>
+<!-- Pie de página -->
+<footer>
+    <!-- Apartado de contacto -->
+    <div id="contactanos">
+      <ul>
+        <h4>CONTÁCTANOS</h4>
+        <li>Teléfono: +506 8824 2887</li>
+        <li>WhatsApp: +506 6052 5912</li>
+        <li>Correo: serviciosinfo@growth.ac.cr</li>
+        <li>Dirección: Calle 49, a un costado del Mall San</li>
+        <li>Pedro, Montes de Oca, San José, Costa Rica</li>
+      </ul>
+    </div>
+    <!-- Apartado de información acerca de la empresa y el producto -->
+    <div id="acercade">
+      <h4>ACERCA DE</h4>
+      <div class="enlaces">
+        <img src="/imagenes/nuestro producto.png" alt="nuestro producto" />
+        <a href="/LandingPageProducto.html">Nuestro Producto</a>
+      </div>
+      <div class="enlaces">
+        <img src="/imagenes/sobre nosotros.png" alt="sobre nosotros" />
+        <a href="/LandingPageCodeCraft.html">Nuestro equipo</a>
+      </div>
+    </div>
+    <!-- Apartado de redes -->
+    <div id="redes">
+      <h4>REDES</h4>
+      <img src="/imagenes/facebook_logo.png" alt="facebook_logo" />
+      <img src="/imagenes/twitter_logo.png" alt="twitter_logo" />
+      <img src="/imagenes/instagram_logo.png" alt="instagram_logo" />
+    </div>
+    <!-- Apartado con copyright -->
+    <div id="copyright">
+        <p>&copy Copyright 2023 Growth</p>
+    </div>
+</footer> 
+</html>

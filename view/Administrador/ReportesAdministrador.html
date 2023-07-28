@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/Estilos/EstilosEncabezadoAdministrador.css">
+    <link rel="stylesheet" href="/Estilos/EstiloReportes.css" />
+    <link rel="stylesheet" href="/Estilos/Footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300&family=Copse&family=Karla:wght@300&display=swap" rel="stylesheet">
+    <title>Reportes Administrador</title>
+</head>
+<!-- Encabezado de la página -->
+<header>
+    <!-- Sección con el logo y nombre del producto -->
+    <img src="/imagenes/Growth_logo.png">
+    <div class="nombre_equipo">
+        <h3><a href="/Administrador/HomeAdministrador.html">Growth</a></h3>
+        <p><a href="/Administrador/HomeAdministrador.html">Cultivando el crecimiento y los sueños</a></p>
+    </div>
+    <!-- Sección con enlaces -->
+        <div class="Enlaces">
+        <div class="opciones_menu">
+            <img src="/Imagenes/crear_cuentas.png" />
+            <a href="/Administrador/CrearCuentaReclutadorManager.html" class="opciones">Crear cuentas</a>
+        </div>
+        <div class="opciones_menu">
+            <img src="/Imagenes/Invitaciones.png" />
+            <a href="/Administrador/CrearInvitacionEmpresa.html" class="opciones">Invitaciones</a>
+        </div>
+        <div class="opciones_menu">
+            <img src="/Imagenes/Notificaciones.png" />
+            <a href="/Administrador/NotificacionesAdministrador.html" class="opciones">Notificaciones</a>
+        </div>
+        <div class="opciones_menu">
+            <img src="/Imagenes/Reportes.png" />
+            <a href= "/Administrador/ReportesAdministrador.html" class="opciones">Mis reportes</a>
+        </div>
+        <div class="opciones_menu">
+            <img src="/imagenes/Mi_perfil.png" />
+            <a href="/Administrador/PerfilEmpresarial.html" class="opciones">Mi perfil</a>
+        </div>
+        <div class="opciones_menu">
+            <img src="/imagenes/cerrar_sesion.png">
+            <a href="/HomeGrowth.html" class="opciones">Cerrar Sesión</a>
+        </div>
+    </div>
+</header>
+<body>
+    <div class="pagina_principal">
+        <div class="columna_1">
+            <!--Invitacion-->
+            <div class="invitaciones">
+                <h1>Invitación</h1>
+                <p>Envía una invitación por correo a un conocido para que participe en la postulación de este empleo.</p>
+                <form action="">
+                    <label>Puesto del trabajo</label>
+                    <input type="text" name="nombrePuesto" placeholder="Ingresa el nombre del puesto" required>
+                    <input type="email" name="correo" placeholder="Ingresa el correo electrónico" required>
+                    <div class="espacio_mensajes">
+                        <div class="mensaje">
+                            <input type="radio" name="mensajeInvitacion">
+                            <p>Enviar mensaje predeterminado</p>
+                        </div>
+                        <div class="mensaje">
+                            <input type="radio" name="mensajeInvitacion">
+                            <p>Escribir mensaje</p>
+                        </div>
+                    </div>
+                    <textarea name="cuerpoMensaje" placeholder="Escribe tu mensaje..."></textarea>
+                    <button id="enviar" type="submit">Enviar</button>
+                </form>
+            </div>
+            <!--Filtros-->
+            <div class="filtro">
+                <form action="" method="post">
+                    <div class="filtro_individual">
+                        <div class="imagen_filtro">
+                            <img src="/Imagenes/Lupa.png" alt="buscar">
+                        </div>
+                        <input type="text" placeholder="Estudios, experiencia o palabra clave">
+                    </div>
+                    <div class="filtro_individual">
+                        <div class="imagen_filtro">
+                            <img src="/Imagenes/Paper.png" alt="lista">
+                        </div>
+                        <select name="Nombre_puesto">
+                            <option selected disabled>Nombre del puesto</option>
+                            <option>Analista programador</option>
+                            <option>Soporte técnico Senior</option>
+                        </select>
+                    </div>
+                    <div class="filtro_individual">
+                        <div class="imagen_filtro">
+                            <img src="/Imagenes/Oficina.png" alt="Oficina">
+                        </div>
+                        <select name="anios">
+                            <option selected disabled>Años de experiencia</option>
+                            <option>1-5</option>
+                            <option>6-10</option>
+                            <option>11 o más</option>
+                        </select>
+                    </div>
+                    <button type="submit">Aplicar filtro</button>
+                </form>
+            </div>
+        </div>
+        <div class="columna_2">
+            <div class="cuadro_borde" id="reporte_usuarios">
+                <div class="cuadro_fondo">
+                    <div class="encabezado_reportes">
+                        <h3>Usuarios dentro de la empresa: <span id="cant_usuarios_empresa">3</span></h3>
+                    </div>
+                    <!-- Ejemplo de puesto 1-->
+                    <div class="ofertas" id="usuarios_empresa">
+                        <!-- Ejemplo de candidato 1-->
+                        <div class="info_candidato">
+                            <div class="ofertas_2">
+                                <div class="informacion" id="informacion_usuarios_empresa">
+                                    <p><span id="nombre_usuario">Nombre del usuario</span></p>
+                                    <p><span id="puesto">Manager</span></p>
+                                    <p><span id="cedula">0-0000-0000</span></p>
+                                </div>
+                                <div class="foto_perfil_2">
+                                    <img src="/Imagenes/foto_perfil.png" alt="logo">
+                                </div>
+                            </div>
+                            <div class="inferior_reportes">
+                                <p>Estado: <span id="estado_aplicacion"> Activo</span></p>
+                                <a href="/Administrador/ModificarUsuarios.html">Ver más</a>
+                            </div>
+                        </div>
+                        <!-- Ejemplo de candidato 1-->
+                        <div class="info_candidato">
+                            <div class="ofertas_2">
+                                <div class="informacion" id="informacion_usuarios_empresa">
+                                    <p><span id="nombre_usuario">Nombre del usuario</span></p>
+                                    <p><span id="puesto">Manager</span></p>
+                                    <p><span id="cedula">0-0000-0000</span></p>
+                                </div>
+                                <div class="foto_perfil_2">
+                                    <img src="/Imagenes/foto_perfil.png" alt="logo">
+                                </div>
+                            </div>
+                            <div class="inferior_reportes">
+                                <p>Estado: <span id="estado_aplicacion"> Activo</span></p>
+                                <a href="/Administrador/ModificarUsuarios.html">Ver más</a>
+                            </div>
+                        </div>
+                        <!-- Ejemplo de candidato 3-->
+                        <div class="info_candidato">
+                            <div class="ofertas_2">
+                                <div class="informacion" id="informacion_usuarios_empresa">
+                                    <p><span id="nombre_usuario">Nombre del usuario</span></p>
+                                    <p><span id="puesto">Reclutador</span></p>
+                                    <p><span id="cedula">0-0000-0000</span></p>
+                                </div>
+                                <div class="foto_perfil_2">
+                                    <img src="/Imagenes/foto_perfil.png" alt="logo">
+                                </div>
+                            </div>
+                            <div class="inferior_reportes">
+                                <p>Estado: <span id="estado_aplicacion"> Activo</span></p>
+                                <a href="/Administrador/ModificarUsuarios.html">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cuadro_borde">
+                <div class="cuadro_fondo">
+                    <div class="encabezado_reportes">
+                        <h3>Reporte de aplicaciones</h3>
+                        <h4>Puestos disponibles: <span id="puestos_disponibles">2</span></h4>
+                    </div>
+                    <!-- Ejemplo de puesto 1-->
+                    <div class="ofertas">
+                        <div class="encabezado_postulacion">
+                            <h1>Analista programador</h1>
+                            <h4>Postulaciones: <span id="cant_postulaciones">3</span></h4>
+                        </div>
+                        <!-- Ejemplo de candidato 1-->
+                        <div class="info_candidato">
+                            <div class="ofertas_2">
+                                <div class="informacion">
+                                    <p><span id="nombre_candidato">Nombre del candidato</span></p>
+                                    <p><span id="anios_exp">Años de experiencia</span></p>
+                                    <p><span id="otros_datos">Profesional versátil y altamente capacitado en el desarrollo y análisis de software. Su expertise abarca áreas como la...</span></p>
+                                </div>
+                                <div class="foto_perfil">
+                                    <img src="/Imagenes/foto_perfil.png" alt="logo">
+                                </div>
+                            </div>
+                            <div class="inferior_reportes">
+                                <p>Estado: <span id="estado_aplicacion"> Enviada</span></p>
+                                <a href="/Administrador/PerfilCandidatoAdmin.html">Ver más</a>
+                            </div>
+                        </div>
+                        <!-- Ejemplo de candidato 2-->
+                        <div class="info_candidato">
+                            <div class="ofertas_2">
+                                <div class="informacion">
+                                    <p><span id="nombre_candidato">Nombre del candidato</span></p>
+                                    <p><span id="anios_exp">Años de experiencia</span></p>
+                                    <p><span id="otros_datos">Profesional versátil y altamente capacitado en el desarrollo y análisis de software. Su expertise abarca áreas como la...</span></p>
+                                </div>
+                                <div class="foto_perfil">
+                                    <img src="/Imagenes/foto_perfil.png" alt="logo">
+                                </div>
+                            </div>
+                            <div class="inferior_reportes">
+                                <p>Estado: <span id="estado_aplicacion"> Enviada</span></p>
+                                <a href="/Administrador/PerfilCandidatoAdmin.html">Ver más</a>
+                            </div>
+                        </div>
+                        <!-- Ejemplo de candidato 3-->
+                        <div class="info_candidato">
+                            <div class="ofertas_2">
+                                <div class="informacion">
+                                    <p><span id="nombre_candidato">Nombre del candidato</span></p>
+                                    <p><span id="anios_exp">Años de experiencia</span></p>
+                                    <p><span id="otros_datos">Profesional versátil y altamente capacitado en el desarrollo y análisis de software. Su expertise abarca áreas como la...</span></p>
+                                </div>
+                                <div class="foto_perfil">
+                                    <img src="/Imagenes/foto_perfil.png" alt="logo">
+                                </div>
+                            </div>
+                            <div class="inferior_reportes">
+                                <p>Estado: <span id="estado_aplicacion"> Enviada</span></p>
+                                <a href="/Administrador/PerfilCandidatoAdmin.html">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ejemplo de puesto 2-->
+                    <div class="ofertas">
+                        <div class="encabezado_postulacion">
+                            <h1>Soporte técnico Senior</h1>
+                            <h4>Postulaciones: <span id="cant_postulaciones">1</span></h4>
+                        </div>
+                        <!-- Ejemplo de candidato 1-->
+                        <div class="info_candidato">
+                            <div class="ofertas_2">
+                                <div class="informacion">
+                                    <p><span id="nombre_candidato">Nombre del candidato</span></p>
+                                    <p><span id="anios_exp">Años de experiencia</span></p>
+                                    <p><span id="otros_datos">Profesional versátil y altamente capacitado en el desarrollo y análisis de software. Su expertise abarca áreas como la...</span></p>
+                                </div>
+                                <div class="foto_perfil">
+                                    <img src="/Imagenes/foto_perfil.png" alt="logo">
+                                </div>
+                            </div>
+                            <div class="inferior_reportes">
+                                <p>Estado: <span id="estado_aplicacion"> Enviada</span></p>
+                                <a href="/Administrador/PerfilCandidatoAdmin.html">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cuadro_borde" id="invitacion">
+                <div class="cuadro_fondo">
+                    <div class="encabezado_reportes">
+                        <h3>Invitaciones enviadas: <span id="cant_usuarios_empresa">4</span></h3>
+                    </div>
+                    <div class="ofertas" id="reporte_invitaciones">
+                        <!-- Ejemplo de invitación 1-->
+                        <div class="info_candidato">
+                            <div class="ofertas_2">
+                                <div class="informacion" id="informacion_invitacion">
+                                    <p><span id="correo">CodeCraft@example.com</span></p>
+                                    <p><span id="puesto">Puesto asignado</span></p>
+                                </div>
+                            </div>
+                            <div class="inferior_reportes" id="direccion_invitacion">
+                                <a href="/Administrador/NotificacionesAdministrador.html">Ver invitación completa</a>
+                            </div>
+                        </div>
+                        <!-- Ejemplo de invitación 1-->
+                        <div class="info_candidato">
+                            <div class="ofertas_2">
+                                <div class="informacion" id="informacion_invitacion">
+                                    <p><span id="correo">CodeCraft@example.com</span></p>
+                                    <p><span id="puesto">Puesto asignado</span></p>
+                                </div>
+                            </div>
+                            <div class="inferior_reportes" id="direccion_invitacion">
+                                <a href="/Administrador/NotificacionesAdministrador.html">Ver invitación completa</a>
+                            </div>
+                        </div>
+                        <!-- Ejemplo de invitación 1-->
+                        <div class="info_candidato">
+                            <div class="ofertas_2">
+                                <div class="informacion" id="informacion_invitacion">
+                                    <p><span id="correo">CodeCraft@example.com</span></p>
+                                    <p><span id="puesto">Puesto asignado</span></p>
+                                </div>
+                            </div>
+                            <div class="inferior_reportes" id="direccion_invitacion">
+                                <a href="/Administrador/NotificacionesAdministrador.html">Ver invitación completa</a>
+                            </div>
+                        </div>
+                        <!-- Ejemplo de invitación 1-->
+                        <div class="info_candidato">
+                            <div class="ofertas_2">
+                                <div class="informacion" id="informacion_invitacion">
+                                    <p><span id="correo">CodeCraft@example.com</span></p>
+                                    <p><span id="puesto">Puesto asignado</span></p>
+                                </div>
+                            </div>
+                            <div class="inferior_reportes" id="direccion_invitacion">
+                                <a href="/Administrador/NotificacionesAdministrador.html">Ver invitación completa</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- Pie de página -->
+<footer>
+    <!-- Apartado de contacto -->
+    <div id="contactanos">
+      <ul>
+        <h4>CONTÁCTANOS</h4>
+        <li>Teléfono: +506 8824 2887</li>
+        <li>WhatsApp: +506 6052 5912</li>
+        <li>Correo: serviciosinfo@growth.ac.cr</li>
+        <li>Dirección: Calle 49, a un costado del Mall San</li>
+        <li>Pedro, Montes de Oca, San José, Costa Rica</li>
+      </ul>
+    </div>
+    <!-- Apartado de información acerca de la empresa y el producto -->
+    <div id="acercade">
+      <h4>ACERCA DE</h4>
+      <div class="enlaces">
+        <img src="/imagenes/nuestro producto.png" alt="nuestro producto" />
+        <a href="/LandingPageProducto.html">Nuestro Producto</a>
+      </div>
+      <div class="enlaces">
+        <img src="/imagenes/sobre nosotros.png" alt="sobre nosotros" />
+        <a href="/LandingPageCodeCraft.html">Nuestro equipo</a>
+      </div>
+    </div>
+    <!-- Apartado de redes -->
+    <div id="redes">
+      <h4>REDES</h4>
+      <img src="/imagenes/facebook_logo.png" alt="facebook_logo" />
+      <img src="/imagenes/twitter_logo.png" alt="twitter_logo" />
+      <img src="/imagenes/instagram_logo.png" alt="instagram_logo" />
+    </div>
+    <!-- Apartado con copyright -->
+    <div id="copyright">
+        <p>&copy Copyright 2023 Growth</p>
+    </div>
+</footer> 
+</html> 

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/Estilos/EstiloHome.css">
+    <link rel="stylesheet" href="/Estilos/EstilosEncabezadoAdministrador.css">
+    <link rel="stylesheet" href="/Estilos/Footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300&family=Copse&family=Karla:wght@300&display=swap" rel="stylesheet">
+    <title>Modificación de usuarios de la empresa</title>
+</head>
+<!-- Encabezado de la página -->
+<header>
+    <!-- Sección con el logo y nombre del producto -->
+    <img src="/imagenes/Growth_logo.png">
+    <div class="nombre_equipo">
+        <h3><a href="/Administrador/HomeAdministrador.html">Growth</a></h3>
+        <p><a href="/Administrador/HomeAdministrador.html">Cultivando el crecimiento y los sueños</a></p>
+    </div>
+    <!-- Sección con enlaces -->
+        <div class="Enlaces">
+        <div class="opciones_menu">
+            <img src="/Imagenes/crear_cuentas.png" />
+            <a href="/Administrador/CrearCuentaReclutadorManager.html" class="opciones">Crear cuentas</a>
+        </div>
+        <div class="opciones_menu">
+            <img src="/Imagenes/Invitaciones.png" />
+            <a href="/Administrador/CrearInvitacionEmpresa.html" class="opciones">Invitaciones</a>
+        </div>
+        <div class="opciones_menu">
+            <img src="/Imagenes/Notificaciones.png" />
+            <a href="/Administrador/NotificacionesAdministrador.html" class="opciones">Notificaciones</a>
+        </div>
+        <div class="opciones_menu">
+            <img src="/Imagenes/Reportes.png" />
+            <a href= "/Administrador/ReportesAdministrador.html" class="opciones">Mis reportes</a>
+        </div>
+        <div class="opciones_menu">
+            <img src="/imagenes/Mi_perfil.png" />
+            <a href="/Administrador/PerfilEmpresarial.html" class="opciones">Mi perfil</a>
+        </div>
+        <div class="opciones_menu">
+            <img src="/imagenes/cerrar_sesion.png">
+            <a href="/HomeGrowth.html" class="opciones">Cerrar Sesión</a>
+        </div>
+    </div>
+</header>
+<!-- Cuerpo de la página -->
+<body>
+    <div class="pagina_principal">
+        <div class="columna_1">
+            <div class="cuadro_borde">
+                <div class="cuadro_fondo">
+                    <h1>Cantidad de usuarios dentro de tu empresa</h1>
+                    <p><strong>Managers: </strong><span id="cantManagers">1</span></p>
+                    <p><strong>Reclutadores: </strong><span id="cantReclutadores">1</span></p>
+                    <div id="circulo_borde">
+                        <div id="circulo_fondo">
+                            <img src="/imagenes/crear_cuentas.png" alt="Cantidad de usuarios">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuadro_borde2">
+            <div class="cuadro_fondo2">
+                <h3>Usuarios</h3>
+                
+                <!-- Ejemplo de usuario 1-->
+                <div class="usuarios">
+                    <div class="info_usuario">
+                        <div class="datos_usuario">
+                            <h1><span id="tipoUsuario">Manager</span></h1>
+                            <p>Nombre: <span id="nombre">Juan Pérez</span></p>
+                            <p>Cédula: <span id="cedula">0-0000-0000</span></p>
+                            <p>Teléfono: <span id="telefono">00000000</span></p>
+                            <p>Correo electrónico: <span id="correo">juan@example.com</span></p>
+                        </div>
+                        <div class="foto_usuario">
+                            <img src="/Imagenes/foto_perfil.png" alt="Foto de perfil">
+                        </div>
+                    </div>
+                    <a id="botonModificar" href="/Administrador/EditarUsuarios.html">Modificar</a>
+                </div>
+                <!-- Ejemplo de usuario 2-->
+                <div class="usuarios">
+                    <div class="info_usuario">
+                        <div class="datos_usuario">
+                            <h1><span id="tipoUsuario">Reclutador</span></h1>
+                            <p>Nombre: <span id="nombre">Ana Vargas</span></p>
+                            <p>Cédula: <span id="cedula">0-0000-0000</span></p>
+                            <p>Teléfono: <span id="telefono">00000000</span></p>
+                            <p>Correo electrónico: <span id="correo">ana@example.com</span></p>
+                        </div>
+                        <div class="foto_usuario">
+                            <img src="/Imagenes/foto_perfil.png" alt="Foto de perfil">
+                        </div>
+                    </div>
+                    <a id="botonModificar" href="/Administrador/EditarUsuarios.html">Modificar</a>
+                </div>                
+            </div>
+        </div>
+    </div>
+</body>
+<!-- Pie de página -->
+<footer>
+    <!-- Apartado de contacto -->
+    <div id="contactanos">
+      <ul>
+        <h4>CONTÁCTANOS</h4>
+        <li>Teléfono: +506 8824 2887</li>
+        <li>WhatsApp: +506 6052 5912</li>
+        <li>Correo: serviciosinfo@growth.ac.cr</li>
+        <li>Dirección: Calle 49, a un costado del Mall San</li>
+        <li>Pedro, Montes de Oca, San José, Costa Rica</li>
+      </ul>
+    </div>
+    <!-- Apartado de información acerca de la empresa y el producto -->
+    <div id="acercade">
+      <h4>ACERCA DE</h4>
+      <div class="enlaces">
+        <img src="/imagenes/nuestro producto.png" alt="nuestro producto" />
+        <a href="/LandingPageProducto.html">Nuestro Producto</a>
+      </div>
+      <div class="enlaces">
+        <img src="/imagenes/sobre nosotros.png" alt="sobre nosotros" />
+        <a href="/LandingPageCodeCraft.html">Nuestro equipo</a>
+      </div>
+    </div>
+    <!-- Apartado de redes -->
+    <div id="redes">
+      <h4>REDES</h4>
+      <img src="/imagenes/facebook_logo.png" alt="facebook_logo" />
+      <img src="/imagenes/twitter_logo.png" alt="twitter_logo" />
+      <img src="/imagenes/instagram_logo.png" alt="instagram_logo" />
+    </div>
+    <!-- Apartado con copyright -->
+    <div id="copyright">
+        <p>&copy Copyright 2023 Growth</p>
+    </div>
+</footer> 
+</html> 
